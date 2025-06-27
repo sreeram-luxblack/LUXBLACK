@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 
-export default function Contactform() {
+export default function ContactForm() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -13,8 +13,6 @@ export default function Contactform() {
   });
 
   const [errors, setErrors] = useState({});
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitted, setSubmitted] = useState(false);
   const [status, setStatus] = useState('');
 
   const countries = [
@@ -41,15 +39,11 @@ export default function Contactform() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const newErrors = validate();
-    if (Object.keys(newErrors).length > 0) {
-      setErrors(newErrors);
+    const validationErrors = validate();
+    if (Object.keys(validationErrors).length > 0) {
+      setErrors(validationErrors);
       return;
     }
-
-    setErrors({});
-    setIsSubmitting(true);
-    setStatus('');
 
     try {
       const res = await fetch('/api/contact', {
@@ -59,9 +53,7 @@ export default function Contactform() {
       });
 
       const result = await res.json();
-
       if (result.success) {
-        setSubmitted(true);
         setStatus('Your message was sent successfully!');
         setFormData({
           name: '',
@@ -72,13 +64,11 @@ export default function Contactform() {
           notes: '',
         });
       } else {
-        setStatus('Failed to send message. Please try again later.');
+        setStatus('Failed to send message. Try again later.');
       }
     } catch (err) {
-      console.error('Error:', err);
-      setStatus('Server error. Please try again later.');
-    } finally {
-      setIsSubmitting(false);
+      console.error(err);
+      setStatus('Server error. Try again later.');
     }
   };
 
@@ -139,7 +129,9 @@ export default function Contactform() {
               </option>
             ))}
           </select>
-          {errors.destination && <p className="text-sm text-red-500">{errors.destination}</p>}
+          {errors.destination && (
+            <p className="text-sm text-red-500">{errors.destination}</p>
+          )}
         </div>
 
         <div>
@@ -166,10 +158,9 @@ export default function Contactform() {
 
         <button
           type="submit"
-          disabled={isSubmitting}
           className="w-full bg-[#C9B87A] text-white py-2 rounded-md hover:bg-[#bda865] transition-colors duration-300 font-semibold tracking-wide"
         >
-          {isSubmitting ? 'Sending...' : 'Start Your Journey'}
+          Start Your Journey
         </button>
 
         {status && (
