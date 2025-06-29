@@ -3,7 +3,17 @@ import nodemailer from 'nodemailer';
 
 export async function POST(req) {
   const body = await req.json();
-  const { name, email, phone, destination, dates, notes } = body;
+  const {
+    name,
+    city,
+    email,
+    phone,
+    whatsapp,
+    destination,
+    dates,
+    people,
+    vacationType,
+  } = body;
 
   const transporter = nodemailer.createTransport({
     service: 'gmail',
@@ -17,22 +27,27 @@ export async function POST(req) {
     await transporter.sendMail({
       from: `"LuxBlack Contact Form" <${process.env.SMTP_EMAIL}>`,
       to: 'siddhantvats840@gmail.com',
-      subject: `New Inquiry from ${name}`,
+      subject: `New Travel Inquiry from ${name}`,
       html: `
+        <h2>New Travel Enquiry</h2>
         <p><strong>Name:</strong> ${name}</p>
+        <p><strong>City of Residence:</strong> ${city}</p>
         <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Phone:</strong> ${phone}</p>
-        <p><strong>Preferred Destination:</strong> ${destination}</p>
+        <p><strong>Phone Number:</strong> ${phone}</p>
+        <p><strong>WhatsApp:</strong> ${whatsapp || 'N/A'}</p>
+        <p><strong>Travel Destination:</strong> ${destination}</p>
         <p><strong>Travel Dates:</strong> ${dates}</p>
-        <p><strong>Notes:</strong> ${notes}</p>
+        <p><strong>No. of People:</strong> ${people}</p>
+        <p><strong>Vacation Type:</strong> ${vacationType}</p>
       `,
     });
 
     return Response.json({ success: true, message: 'Email sent successfully!' });
   } catch (error) {
     console.error('Email error:', error);
-    return new Response(JSON.stringify({ success: false, message: 'Email failed to send.' }), {
-      status: 500,
-    });
+    return new Response(
+      JSON.stringify({ success: false, message: 'Email failed to send.' }),
+      { status: 500 }
+    );
   }
 }

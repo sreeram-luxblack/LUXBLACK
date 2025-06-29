@@ -43,7 +43,7 @@ export default function Experience() {
               >
                 <Icon
                   size={42}
-                  className="text-[#2C2C2C] transition-transform duration-300 group-hover:scale-110"
+                  className="text-[#2C2C2C] transition-transform duration-300 group-hover:scale-150"
                 />
                 <p className="text-sm font-libre">{exp.title}</p>
               </div>

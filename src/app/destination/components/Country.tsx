@@ -1,0 +1,245 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+"use client";
+
+import { useState, useEffect } from "react";
+import * as RadixAccordion from "@radix-ui/react-accordion";
+import Image from "next/image";
+
+const dynamicCategories = [
+  {
+    title: "Family",
+    cards: [
+      {
+        title: "Family Fun in Bali",
+        description: "Enjoy serene beaches with activities for all ages.",
+        bullets: ["Kid-friendly resorts", "Local tours", "Beachside dinners"],
+        images: ["/images/dest1.jpg", "/images/dest2.jpg", "/images/dest3.jpg"],
+      },
+      {
+        title: "Explore Rome",
+        description: "History and fun for the entire family.",
+        bullets: ["Colosseum tours", "Pizza-making classes", "Family hotels"],
+        images: ["/images/dest2.jpg", "/images/dest3.jpg", "/images/dest1.jpg"],
+      },
+      {
+        title: "Tokyo with Kids",
+        description: "Tech meets tradition in a family-friendly city.",
+        bullets: ["Theme parks", "Sushi classes", "Cultural shows"],
+        images: ["/images/dest3.jpg", "/images/dest1.jpg", "/images/dest2.jpg"],
+      },
+    ],
+  },
+  {
+    title: "Couples",
+    cards: [
+      {
+        title: "Romantic Paris",
+        description: "Stroll hand-in-hand along the Seine.",
+        bullets: ["Eiffel Tower dinner", "Seine cruise", "Wine tasting"],
+        images: ["/images/dest1.jpg", "/images/dest2.jpg", "/images/dest3.jpg"],
+      },
+      {
+        title: "Maldives Escape",
+        description: "Private overwater villas and clear waters.",
+        bullets: ["Candlelit dinners", "Couples spa", "Snorkeling"],
+        images: ["/images/dest2.jpg", "/images/dest3.jpg", "/images/dest1.jpg"],
+      },
+      {
+        title: "Venetian Dream",
+        description: "Float through romantic canals.",
+        bullets: ["Gondola rides", "Historic charm", "Italian cuisine"],
+        images: ["/images/dest3.jpg", "/images/dest1.jpg", "/images/dest2.jpg"],
+      },
+    ],
+  },
+  {
+    title: "Group",
+    cards: [
+      {
+        title: "Thailand Group Adventure",
+        description: "Enjoy vibrant markets and island hopping together.",
+        bullets: ["Group boat tours", "Street food walks", "Temple visits"],
+        images: ["/images/dest1.jpg", "/images/dest3.jpg", "/images/dest2.jpg"],
+      },
+      {
+        title: "Swiss Alps Trek",
+        description: "Bond with your crew in the breathtaking Alps.",
+        bullets: ["Chalet stays", "Scenic hikes", "Group photography"],
+        images: ["/images/dest3.jpg", "/images/dest2.jpg", "/images/dest1.jpg"],
+      },
+      {
+        title: "Morocco Discovery",
+        description: "Explore souks and deserts in a shared adventure.",
+        bullets: ["Camel rides", "Desert camps", "Cultural workshops"],
+        images: ["/images/dest2.jpg", "/images/dest1.jpg", "/images/dest3.jpg"],
+      },
+    ],
+  },
+  {
+    title: "Solo",
+    cards: [
+      {
+        title: "Bali Spiritual Journey",
+        description: "Unwind and reconnect with yourself.",
+        bullets: ["Yoga retreats", "Ubud stays", "Local ceremonies"],
+        images: ["/images/dest3.jpg", "/images/dest1.jpg", "/images/dest2.jpg"],
+      },
+      {
+        title: "Portugal Coast Drive",
+        description: "Freedom of the open road and hidden beaches.",
+        bullets: ["Car rentals", "Coastal towns", "Sunset views"],
+        images: ["/images/dest1.jpg", "/images/dest2.jpg", "/images/dest3.jpg"],
+      },
+      {
+        title: "Vietnam Culture Solo",
+        description: "Immerse in local traditions and flavors.",
+        bullets: ["Food tours", "Solo-friendly hostels", "Local art"],
+        images: ["/images/dest2.jpg", "/images/dest3.jpg", "/images/dest1.jpg"],
+      },
+    ],
+  },
+  {
+    title: "Luxury",
+    cards: [
+      {
+        title: "Dubai Elite Escape",
+        description: "Indulge in ultra-luxury experiences.",
+        bullets: ["7-star hotels", "Private yachts", "Sky dining"],
+        images: ["/images/dest1.jpg", "/images/dest2.jpg", "/images/dest3.jpg"],
+      },
+      {
+        title: "French Riviera Glamour",
+        description: "Relax like royalty in Côte d’Azur.",
+        bullets: ["Designer shopping", "Private beaches", "Château stays"],
+        images: ["/images/dest3.jpg", "/images/dest1.jpg", "/images/dest2.jpg"],
+      },
+      {
+        title: "Luxury Safari in Kenya",
+        description: "See the wild in the most refined way.",
+        bullets: [
+          "Private game drives",
+          "Luxury lodges",
+          "Gourmet bush dining",
+        ],
+        images: ["/images/dest2.jpg", "/images/dest3.jpg", "/images/dest1.jpg"],
+      },
+    ],
+  },
+];
+
+function Card({
+  children,
+  className = "",
+}: {
+  children: React.ReactNode;
+  className?: string;
+}) {
+  return (
+    <div
+      className={`bg-white rounded-2xl overflow-hidden shadow-xl transition-all duration-300 ${className}`}
+    >
+      {children}
+    </div>
+  );
+}
+
+function ImageSlider({ images }: { images: string[] }) {
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setIndex((prev) => (prev + 1) % images.length);
+    }, 3000);
+    return () => clearInterval(timer);
+  }, [images]);
+
+  return (
+    <div className="relative w-full aspect-square overflow-hidden">
+      <Image
+        src={images[index]}
+        alt={`Destination ${index + 1}`}
+        fill
+        className="object-cover transition-all duration-500"
+      />
+      <div className="absolute inset-x-0 bottom-2 flex justify-center gap-2">
+        {images.map((_, i) => (
+          <div
+            key={i}
+            className={`w-2 h-2 rounded-full ${
+              i === index ? "bg-white" : "bg-white/50"
+            }`}
+          />
+        ))}
+      </div>
+    </div>
+  );
+}
+
+export default function Country() {
+  const [openItem, setOpenItem] = useState<string | null>(null);
+
+  return (
+    <section className="w-full px-4 sm:px-8 py-12 bg-[#F8F5F0]">
+      <h2 className="text-center text-[48px] font-semibold font-playfair text-[#2C2C2C] mb-10 font-libre">
+        Choose Your Destination
+      </h2>
+      <RadixAccordion.Root
+        type="single"
+        collapsible
+        value={openItem || ""}
+        onValueChange={(value) => setOpenItem(value || null)}
+        className="w-full space-y-4"
+      >
+        {dynamicCategories.map((category) => (
+          <RadixAccordion.Item
+            key={category.title}
+            value={category.title}
+            className="border border-[#e0d7c4] rounded-xl bg-white overflow-hidden"
+          >
+            <RadixAccordion.Header>
+              <RadixAccordion.Trigger className="w-full flex justify-between items-center px-6 py-4 font-semibold text-xl bg-gradient-to-l from-[#C9B87A] to-[#b89c5f] text-white cursor-pointer">
+                {category.title}
+                <span
+                  className={`transform transition-transform duration-300 ${
+                    openItem === category.title ? "rotate-90" : "rotate-0"
+                  }`}
+                >
+                  ▶
+                </span>
+              </RadixAccordion.Trigger>
+            </RadixAccordion.Header>
+
+            <RadixAccordion.Content className="p-4 space-y-6 animate-slideDown">
+              {category.cards.map((card, i) => (
+                <Card
+                  key={i}
+                  className="flex flex-col md:flex-row w-full max-h-[420px] md:max-h-[400px] overflow-hidden"
+                >
+                  <div className="md:w-1/2 w-full">
+                    <ImageSlider images={card.images} />
+                  </div>
+                  <div className="md:w-1/2 w-full p-4 bg-[#F8F5F0] flex flex-col justify-center">
+                    <h3 className="text-xl font-bold text-[#2C2C2C] mb-2">
+                      {card.title}
+                    </h3>
+                    <p className="mb-3 text-sm text-[#2C2C2C]/90">
+                      {card.description}
+                    </p>
+                    <ul className="list-disc pl-4 space-y-1 text-sm text-[#2C2C2C]">
+                      {card.bullets.map((point, idx) => (
+                        <li key={idx}>{point}</li>
+                      ))}
+                    </ul>
+                    <button className="mt-4 self-start bg-[#C9B87A] text-white px-4 py-1.5 rounded-lg hover:bg-[#bda865] transition-colors shadow-md text-sm">
+                      Enquire Now
+                    </button>
+                  </div>
+                </Card>
+              ))}
+            </RadixAccordion.Content>
+          </RadixAccordion.Item>
+        ))}
+      </RadixAccordion.Root>
+    </section>
+  );
+}

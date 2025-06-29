@@ -16,7 +16,7 @@ export default function Whatwe() {
             Tom and James – our co-founders – know this better than anyone. You
             can meet them in our new video.
           </p>
-          <button className="bg-[#2C2C2C] text-white px-6 py-3 font-inter text-sm font-semibold uppercase tracking-wider hover:bg-[#1E1E1E] transition rounded-md w-fit mx-auto lg:mx-0">
+          <button className="bg-[#2C2C2C]  text-white px-6 py-3 font-inter text-sm font-semibold uppercase tracking-wider hover:bg-[#424242] transition rounded-md w-fit mx-auto lg:mx-0">
             Watch the Film
           </button>
         </div>

@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-"use client"
+"use client";
 import Image from "next/image";
 import Hero from "./component/Hero";
 import Contactform from "./component/Contactform";
@@ -10,9 +10,8 @@ export default function Home() {
   return (
     <>
       <Hero></Hero>
-    
-        <Contactform/>
-      
+
+      <Contactform />
     </>
   );
 }

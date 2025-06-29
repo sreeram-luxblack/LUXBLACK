@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import Image from "next/image";
 
 const categories = [
@@ -61,6 +62,8 @@ const categories = [
 ];
 
 export default function Groups() {
+  const [flippedIndex, setFlippedIndex] = useState(null);
+
   return (
     <section className="bg-[#F8F5F0] py-[50px] md:py-[70px] px-4">
       <h2 className="text-center text-[48px] font-semibold text-[#2C2C2C] mb-10 font-libre">
@@ -71,9 +74,18 @@ export default function Groups() {
         {categories.map((cat, idx) => (
           <div
             key={idx}
-            className="group [perspective:1000px] h-[450px] sm:h-[500px] 2xl:h-[550px] w-full"
+            className="group [perspective:1000px] h-[450px] sm:h-[500px] 2xl:h-[550px] w-full cursor-pointer"
+            onClick={() =>
+              setFlippedIndex(flippedIndex === idx ? null : idx)
+            }
           >
-            <div className="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+            <div
+              className={`relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] ${
+                flippedIndex === idx
+                  ? "[transform:rotateY(180deg)]"
+                  : ""
+              } group-hover:[transform:rotateY(180deg)]`}
+            >
               {/* Front */}
               <div className="absolute inset-0 [backface-visibility:hidden] rounded-lg overflow-hidden shadow-md">
                 <Image
@@ -82,13 +94,13 @@ export default function Groups() {
                   fill
                   className="object-cover"
                 />
-                <div className="absolute bottom-[20%] left-0 right-0 text-center text-white text-lg font-semibold tracking-wide  py-1 font-subheading">
+                <div className="absolute bottom-[20%] left-0 right-0 text-center text-white text-lg font-semibold tracking-wide py-1 font-subheading">
                   {cat.title}
                 </div>
               </div>
 
               {/* Back */}
-              <div className="absolute border-[#A89C94] border-[1px] inset-0 [backface-visibility:hidden] [transform:rotateY(180deg)] bg-[#EAE4DC] rounded-lg p-3 shadow-md flex flex-col justify-center items-center space-y-3 overflow-auto">
+              <div className="absolute border-[#A89C94] border-[1px] inset-0 [backface-visibility:hidden] [transform:rotateY(180deg)] bg-[#ffffff] rounded-lg p-3 shadow-md flex flex-col justify-center items-center space-y-3 overflow-auto">
                 <div className="flex flex-col gap-2">
                   {cat.countries.map((country, i) => (
                     <div
