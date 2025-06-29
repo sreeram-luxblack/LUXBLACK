@@ -13,6 +13,7 @@ export default function Hero() {
         layout="fill"
         objectFit="cover"
         priority
+        className="brightness-[0.75]"
       />
 
       {/* Overlay */}

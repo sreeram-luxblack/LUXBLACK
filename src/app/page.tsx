@@ -8,6 +8,7 @@ import Whatwe from "../../components/Whatwe"
 import Whylux from "../../components/Whylux"
 import Experience from "../../components/Experience"
 import AboutUsSection from "../../components/AboutUsSection"
+import Testimonial from "../../components/Testimonial"
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Experience></Experience>
       <Whatwe></Whatwe>
       <Whylux></Whylux>
+      <Testimonial></Testimonial>
       <AboutUsSection></AboutUsSection>
     </>
   );

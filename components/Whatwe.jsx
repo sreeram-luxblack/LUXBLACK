@@ -11,7 +11,7 @@ export default function Whatwe() {
             What We Do <br /> And Why We Do It
           </h2>
           <p className="text-[#2C2C2C] text-sm sm:text-base font-inter leading-relaxed  mx-auto lg:mx-0">
-            Since our founding in 2005, Black Tomato has always been about
+            Since our founding in 2025, LuxBlack has always been about
             crafting remarkable, tailor made trips for clients around the world.
             Tom and James – our co-founders – know this better than anyone. You
             can meet them in our new video.

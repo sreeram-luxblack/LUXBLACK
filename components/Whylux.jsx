@@ -37,10 +37,10 @@ const reasons = [
 
 export default function Whylux() {
   return (
-    <section className="bg-white py-16 px-6 sm:px-10">
+    <section className="bg-white pt-16 pb-5 px-6 sm:px-10">
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-2xl sm:text-3xl font-bold uppercase font-playfair text-[#2C2C2C] mb-10">
-          Why Black Tomato?
+          Why LuxBlack?
         </h2>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 justify-items-center">

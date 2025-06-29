@@ -315,3 +315,15 @@ body {
   width: 100%;
   height: 100%;
 }
+
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #C9B87A; /* Gold color */
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 24px;
+  font-weight: bold;
+}

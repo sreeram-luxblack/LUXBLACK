@@ -8,6 +8,7 @@ import Image from "next/image";
 const dynamicCategories = [
   {
     title: "Family",
+    bgImage: "/images/acc.jpg",
     cards: [
       {
         title: "Family Fun in Bali",
@@ -31,6 +32,7 @@ const dynamicCategories = [
   },
   {
     title: "Couples",
+    bgImage: "/images/acc2.jpg",
     cards: [
       {
         title: "Romantic Paris",
@@ -54,6 +56,7 @@ const dynamicCategories = [
   },
   {
     title: "Group",
+    bgImage: "/images/acc3.jpg",
     cards: [
       {
         title: "Thailand Group Adventure",
@@ -77,6 +80,7 @@ const dynamicCategories = [
   },
   {
     title: "Solo",
+    bgImage: "/images/acc4.jpg",
     cards: [
       {
         title: "Bali Spiritual Journey",
@@ -100,6 +104,7 @@ const dynamicCategories = [
   },
   {
     title: "Luxury",
+    bgImage: "/images/acc.jpg",
     cards: [
       {
         title: "Dubai Elite Escape",
@@ -179,8 +184,8 @@ export default function Country() {
   const [openItem, setOpenItem] = useState<string | null>(null);
 
   return (
-    <section className="w-full px-4 sm:px-8 py-12 bg-[#F8F5F0]">
-      <h2 className="text-center text-[48px] font-semibold font-playfair text-[#2C2C2C] mb-10 font-libre">
+    <section className="w-full px-4 sm:px-8 py-12 bg-[#ffffff]">
+      <h2 className="text-center text-[48px] font-semibold font-playfair text-[#cbb45f] mb-10 font-libre">
         Choose Your Destination
       </h2>
       <RadixAccordion.Root
@@ -197,23 +202,80 @@ export default function Country() {
             className="border border-[#e0d7c4] rounded-xl bg-white overflow-hidden"
           >
             <RadixAccordion.Header>
-              <RadixAccordion.Trigger className="w-full flex justify-between items-center px-6 py-4 font-semibold text-xl bg-gradient-to-l from-[#C9B87A] to-[#b89c5f] text-white cursor-pointer">
-                {category.title}
+              <RadixAccordion.Trigger
+                className="relative overflow-hidden w-full flex justify-between items-center px-6 py-4 text-lg sm:text-xl font-semibold text-[#C9B87A] border border-[#C9B87A] rounded-xl shadow-sm hover:shadow-md transition-all duration-300"
+                style={{
+                  backgroundImage: `url(${category.bgImage})`,
+                  backgroundColor: "#F8F5F0", // fallback
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                }}
+              >
+                {/* 🔷 Overlay for blur and darken effect */}
+                <div className="absolute inset-0 bg-white/30  z-0 rounded-xl" />
+
+                {/* 🔶 Actual Content */}
+                <div className="relative z-10 flex justify-between w-full items-center">
+                  <span className="font-heading text-black font-sarif tracking-wide">
+                    {category.title}
+                  </span>
+                  <span
+                    className={`ml-4 transform transition-transform duration-300 ${
+                      openItem === category.title ? "rotate-90" : "rotate-0"
+                    }`}
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-5 w-5 text-[#000000]"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M9 5l7 7-7 7"
+                      />
+                    </svg>
+                  </span>
+                </div>
+              </RadixAccordion.Trigger>
+
+              {/* <RadixAccordion.Trigger className="w-full flex justify-between items-center px-6 py-4 text-lg sm:text-xl font-semibold text-[#C9B87A] bg-white border border-[#C9B87A] rounded-xl shadow-sm hover:shadow-md hover:bg-[#fffefc] transition-all duration-300">
+                <span className="font-heading tracking-wide">
+                  {category.title}
+                </span>
                 <span
-                  className={`transform transition-transform duration-300 ${
+                  className={`ml-4 transform transition-transform duration-300 ${
                     openItem === category.title ? "rotate-90" : "rotate-0"
                   }`}
                 >
-                  ▶
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5 text-[#C9B87A]"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
                 </span>
-              </RadixAccordion.Trigger>
+              </RadixAccordion.Trigger> */}
             </RadixAccordion.Header>
 
-            <RadixAccordion.Content className="p-4 space-y-6 animate-slideDown">
+            <RadixAccordion.Content
+              className="p-4 space-y-6 animate-slideDown "
+            >
               {category.cards.map((card, i) => (
                 <Card
                   key={i}
-                  className="flex flex-col md:flex-row w-full max-h-[420px] md:max-h-[400px] overflow-hidden"
+                  className="flex flex-col md:flex-row w-full h-fit md:max-h-[400px] overflow-hidden"
                 >
                   <div className="md:w-1/2 w-full">
                     <ImageSlider images={card.images} />

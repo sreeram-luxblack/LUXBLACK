@@ -25,8 +25,9 @@ export default function Footer() {
           <h2 className="text-4xl sm:text-5xl font-playfair tracking-wide text-[#2C2C2C] mb-4">
             Begin Your Journey
           </h2>
-          <p className="text-[#5A5A5A] text-lg sm:text-xl max-w-2xl mx-auto font-libre">
-            Step into a world where luxury meets purpose. Your adventure starts here.
+          <p className="text-[#5A5A5A] text-lg sm:text-xl  [text-shadow:2px_2px_4px_rgba(255,255,255,0.3)] max-w-2xl mx-auto font-libre">
+            Step into a world where luxury meets purpose. Your adventure starts
+            here.
           </p>
         </div>
 
@@ -37,15 +38,19 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto pb-16 px-6 flex flex-col items-center space-y-12">
           {/* Social Icons */}
           <div className="flex gap-8 flex-wrap justify-center">
-            {[FaInstagram, FaLinkedinIn, FaFacebookF, FaXTwitter, FaWhatsapp].map(
-              (Icon, idx) => (
-                <Icon
-                  key={idx}
-                  size={36}
-                  className="text-[#2C2C2C] hover:text-[#C9B87A] hover:scale-110 transition-all duration-300 cursor-pointer"
-                />
-              )
-            )}
+            {[
+              FaInstagram,
+              FaLinkedinIn,
+              FaFacebookF,
+              FaXTwitter,
+              FaWhatsapp,
+            ].map((Icon, idx) => (
+              <Icon
+                key={idx}
+                size={36}
+                className="text-[#2C2C2C] hover:text-[#C9B87A] hover:scale-110 transition-all duration-300 cursor-pointer"
+              />
+            ))}
           </div>
 
           {/* Contact Info */}
@@ -92,4 +97,3 @@ export default function Footer() {
     </footer>
   );
 }
-
