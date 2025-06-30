@@ -77,7 +77,7 @@ export default function Footer() {
               </span>{" "}
               | Developed by{" "}
               <a
-                href="https://sixthgenx.com"
+                href="https://sixthgenx.netlify.app/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-semibold hover:text-[#C9B87A] transition-colors"
