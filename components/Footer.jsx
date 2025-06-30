@@ -38,13 +38,7 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto pb-16 px-6 flex flex-col items-center space-y-12">
           {/* Social Icons */}
           <div className="flex gap-8 flex-wrap justify-center">
-            {[
-              FaInstagram,
-              FaLinkedinIn,
-              FaFacebookF,
-              FaXTwitter,
-              FaWhatsapp,
-            ].map((Icon, idx) => (
+            {[FaInstagram, FaFacebookF, FaWhatsapp].map((Icon, idx) => (
               <Icon
                 key={idx}
                 size={36}
