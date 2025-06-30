@@ -64,7 +64,7 @@ export default function Footer() {
             </div>
             <div className="flex items-center gap-2">
               <HiOutlinePhone size={20} />
-              <p>+1 (123) 456-7890</p>
+              <p>+1 (123) 456-7891</p>
             </div>
           </div>
 
