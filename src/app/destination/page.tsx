@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Hero from "./components/Hero";
 import Country from "./components/Country";
+import Explore from "./components/Explore";
 import Groups from "./components/Groups";
 
 export default function Home() {
@@ -9,7 +10,8 @@ export default function Home() {
     <>
       <Hero></Hero>
       <Country />
-      <Groups></Groups>
+      <Explore></Explore>
+      {/* <Groups></Groups> */}
     </>
   );
 }

@@ -7,104 +7,8 @@ import Image from "next/image";
 
 const dynamicCategories = [
   {
-    title: "Family",
-    bgImage: "/images/acc.jpg",
-    cards: [
-      {
-        title: "Family Fun in Bali",
-        description: "Enjoy serene beaches with activities for all ages.",
-        bullets: ["Kid-friendly resorts", "Local tours", "Beachside dinners"],
-        images: ["/images/dest1.jpg", "/images/dest2.jpg", "/images/dest3.jpg"],
-      },
-      {
-        title: "Explore Rome",
-        description: "History and fun for the entire family.",
-        bullets: ["Colosseum tours", "Pizza-making classes", "Family hotels"],
-        images: ["/images/dest2.jpg", "/images/dest3.jpg", "/images/dest1.jpg"],
-      },
-      {
-        title: "Tokyo with Kids",
-        description: "Tech meets tradition in a family-friendly city.",
-        bullets: ["Theme parks", "Sushi classes", "Cultural shows"],
-        images: ["/images/dest3.jpg", "/images/dest1.jpg", "/images/dest2.jpg"],
-      },
-    ],
-  },
-  {
-    title: "Couples",
-    bgImage: "/images/acc2.jpg",
-    cards: [
-      {
-        title: "Romantic Paris",
-        description: "Stroll hand-in-hand along the Seine.",
-        bullets: ["Eiffel Tower dinner", "Seine cruise", "Wine tasting"],
-        images: ["/images/dest1.jpg", "/images/dest2.jpg", "/images/dest3.jpg"],
-      },
-      {
-        title: "Maldives Escape",
-        description: "Private overwater villas and clear waters.",
-        bullets: ["Candlelit dinners", "Couples spa", "Snorkeling"],
-        images: ["/images/dest2.jpg", "/images/dest3.jpg", "/images/dest1.jpg"],
-      },
-      {
-        title: "Venetian Dream",
-        description: "Float through romantic canals.",
-        bullets: ["Gondola rides", "Historic charm", "Italian cuisine"],
-        images: ["/images/dest3.jpg", "/images/dest1.jpg", "/images/dest2.jpg"],
-      },
-    ],
-  },
-  {
-    title: "Group",
-    bgImage: "/images/acc3.jpg",
-    cards: [
-      {
-        title: "Thailand Group Adventure",
-        description: "Enjoy vibrant markets and island hopping together.",
-        bullets: ["Group boat tours", "Street food walks", "Temple visits"],
-        images: ["/images/dest1.jpg", "/images/dest3.jpg", "/images/dest2.jpg"],
-      },
-      {
-        title: "Swiss Alps Trek",
-        description: "Bond with your crew in the breathtaking Alps.",
-        bullets: ["Chalet stays", "Scenic hikes", "Group photography"],
-        images: ["/images/dest3.jpg", "/images/dest2.jpg", "/images/dest1.jpg"],
-      },
-      {
-        title: "Morocco Discovery",
-        description: "Explore souks and deserts in a shared adventure.",
-        bullets: ["Camel rides", "Desert camps", "Cultural workshops"],
-        images: ["/images/dest2.jpg", "/images/dest1.jpg", "/images/dest3.jpg"],
-      },
-    ],
-  },
-  {
-    title: "Solo",
-    bgImage: "/images/acc4.jpg",
-    cards: [
-      {
-        title: "Bali Spiritual Journey",
-        description: "Unwind and reconnect with yourself.",
-        bullets: ["Yoga retreats", "Ubud stays", "Local ceremonies"],
-        images: ["/images/dest3.jpg", "/images/dest1.jpg", "/images/dest2.jpg"],
-      },
-      {
-        title: "Portugal Coast Drive",
-        description: "Freedom of the open road and hidden beaches.",
-        bullets: ["Car rentals", "Coastal towns", "Sunset views"],
-        images: ["/images/dest1.jpg", "/images/dest2.jpg", "/images/dest3.jpg"],
-      },
-      {
-        title: "Vietnam Culture Solo",
-        description: "Immerse in local traditions and flavors.",
-        bullets: ["Food tours", "Solo-friendly hostels", "Local art"],
-        images: ["/images/dest2.jpg", "/images/dest3.jpg", "/images/dest1.jpg"],
-      },
-    ],
-  },
-  {
-    title: "Luxury",
-    bgImage: "/images/acc.jpg",
+    title: "HoneyMoons",
+    bgImage: "/images/acc5.jpg",
     cards: [
       {
         title: "Dubai Elite Escape",
@@ -130,6 +34,80 @@ const dynamicCategories = [
       },
     ],
   },
+  {
+    title: "Family",
+    bgImage: "/images/acc5.jpg",
+    cards: [
+      {
+        title: "Family Fun in Bali",
+        description: "Enjoy serene beaches with activities for all ages.",
+        bullets: ["Kid-friendly resorts", "Local tours", "Beachside dinners"],
+        images: ["/images/dest1.jpg", "/images/dest2.jpg", "/images/dest3.jpg"],
+      },
+      {
+        title: "Explore Rome",
+        description: "History and fun for the entire family.",
+        bullets: ["Colosseum tours", "Pizza-making classes", "Family hotels"],
+        images: ["/images/dest2.jpg", "/images/dest3.jpg", "/images/dest1.jpg"],
+      },
+      {
+        title: "Tokyo with Kids",
+        description: "Tech meets tradition in a family-friendly city.",
+        bullets: ["Theme parks", "Sushi classes", "Cultural shows"],
+        images: ["/images/dest3.jpg", "/images/dest1.jpg", "/images/dest2.jpg"],
+      },
+    ],
+  },
+  {
+    title: "Couples",
+    bgImage: "/images/acc5.jpg",
+    cards: [
+      {
+        title: "Romantic Paris",
+        description: "Stroll hand-in-hand along the Seine.",
+        bullets: ["Eiffel Tower dinner", "Seine cruise", "Wine tasting"],
+        images: ["/images/dest1.jpg", "/images/dest2.jpg", "/images/dest3.jpg"],
+      },
+      {
+        title: "Maldives Escape",
+        description: "Private overwater villas and clear waters.",
+        bullets: ["Candlelit dinners", "Couples spa", "Snorkeling"],
+        images: ["/images/dest2.jpg", "/images/dest3.jpg", "/images/dest1.jpg"],
+      },
+      {
+        title: "Venetian Dream",
+        description: "Float through romantic canals.",
+        bullets: ["Gondola rides", "Historic charm", "Italian cuisine"],
+        images: ["/images/dest3.jpg", "/images/dest1.jpg", "/images/dest2.jpg"],
+      },
+    ],
+  },
+  {
+    title: "Group",
+    bgImage: "/images/acc5.jpg",
+    cards: [
+      {
+        title: "Thailand Group Adventure",
+        description: "Enjoy vibrant markets and island hopping together.",
+        bullets: ["Group boat tours", "Street food walks", "Temple visits"],
+        images: ["/images/dest1.jpg", "/images/dest3.jpg", "/images/dest2.jpg"],
+      },
+      {
+        title: "Swiss Alps Trek",
+        description: "Bond with your crew in the breathtaking Alps.",
+        bullets: ["Chalet stays", "Scenic hikes", "Group photography"],
+        images: ["/images/dest3.jpg", "/images/dest2.jpg", "/images/dest1.jpg"],
+      },
+      {
+        title: "Morocco Discovery",
+        description: "Explore souks and deserts in a shared adventure.",
+        bullets: ["Camel rides", "Desert camps", "Cultural workshops"],
+        images: ["/images/dest2.jpg", "/images/dest1.jpg", "/images/dest3.jpg"],
+      },
+    ],
+  },
+  
+  
 ];
 
 function Card({
@@ -185,7 +163,7 @@ export default function Country() {
 
   return (
     <section className="w-full px-4 sm:px-8 py-12 bg-[#ffffff]">
-      <h2 className="text-center text-[48px] font-semibold font-playfair text-[#cbb45f] mb-10 font-libre">
+      <h2 className="text-center text-[48px] font-semibold font-playfair text-[#2c2c2c] mb-10 font-libre">
         Choose Your Destination
       </h2>
       <RadixAccordion.Root
@@ -205,18 +183,26 @@ export default function Country() {
               <RadixAccordion.Trigger
                 className="relative overflow-hidden w-full flex justify-between items-center px-6 py-4 text-lg sm:text-xl font-semibold text-[#C9B87A] border border-[#C9B87A] rounded-xl shadow-sm hover:shadow-md transition-all duration-300"
                 style={{
-                  backgroundImage: `url(${category.bgImage})`,
-                  backgroundColor: "#F8F5F0", // fallback
-                  backgroundSize: "cover",
-                  backgroundPosition: "center",
+                  backgroundColor: "#F8F5F0",
                 }}
               >
+                {/* Blurred Background */}
+                <div
+                  className="absolute inset-0 z-0"
+                  style={{
+                    backgroundImage: `url(${category.bgImage})`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                    filter: "blur(10px)",
+                    transform: "scale(1.1)",
+                  }}
+                />
                 {/* 🔷 Overlay for blur and darken effect */}
                 <div className="absolute inset-0 bg-white/30  z-0 rounded-xl" />
 
                 {/* 🔶 Actual Content */}
                 <div className="relative z-10 flex justify-between w-full items-center">
-                  <span className="font-heading text-black font-sarif tracking-wide">
+                  <span className="font-heading text-[#232222] font-sarif tracking-wide">
                     {category.title}
                   </span>
                   <span
@@ -269,9 +255,7 @@ export default function Country() {
               </RadixAccordion.Trigger> */}
             </RadixAccordion.Header>
 
-            <RadixAccordion.Content
-              className="p-4 space-y-6 animate-slideDown "
-            >
+            <RadixAccordion.Content className="p-4 space-y-6 animate-slideDown ">
               {category.cards.map((card, i) => (
                 <Card
                   key={i}

@@ -9,12 +9,14 @@ import Whylux from "../../components/Whylux"
 import Experience from "../../components/Experience"
 import AboutUsSection from "../../components/AboutUsSection"
 import Testimonial from "../../components/Testimonial"
+import Destinations from "../../components/Destinations";
 
 export default function Home() {
   return (
     <>
       <Hero></Hero>
       <Groups></Groups>
+      <Destinations></Destinations>
       <Experience></Experience>
       <Whatwe></Whatwe>
       <Whylux></Whylux>
