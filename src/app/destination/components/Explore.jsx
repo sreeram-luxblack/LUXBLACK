@@ -186,7 +186,6 @@ const countries = [
   },
 ];
 
-
 const months = [
   "All",
   "January",
@@ -223,8 +222,8 @@ export default function Explore() {
       </h1>
 
       {/* Filters */}
-      <div className="flex flex-col sm:flex-row justify-center gap-8 mb-10 text-[#4c3c28]">
-        {/* Month Filter */}
+      {/* <div className="flex flex-col sm:flex-row justify-center gap-8 mb-10 text-[#4c3c28]">
+       
         <div className="flex items-center gap-2 border-b-2 border-[#d1bfa7] pb-1">
           <span className="text-base font-medium">Month</span>
           <select
@@ -240,13 +239,51 @@ export default function Explore() {
           </select>
         </div>
 
-        {/* Category Filter */}
+ 
         <div className="flex items-center gap-2 border-b-2 border-[#d1bfa7] pb-1">
           <span className="text-base font-medium">Travel Type</span>
           <select
             value={category}
             onChange={(e) => setCategory(e.target.value)}
             className="w-40 sm:w-48 h-10 bg-transparent text-[#4c3c28] focus:outline-none"
+          >
+            {categories.map((c, i) => (
+              <option key={i} value={c}>
+                {c.charAt(0).toUpperCase() + c.slice(1)}
+              </option>
+            ))}
+          </select>
+        </div>
+      </div> */}
+
+      <div className="flex flex-col sm:flex-row justify-center gap-6 sm:gap-8 mb-10 text-[#4c3c28]">
+        {/* Month Filter */}
+        <div className="flex flex-col gap-1">
+          <label className="text-sm font-semibold mb-1 text-[#4c3c28]">
+            Month
+          </label>
+          <select
+            value={month}
+            onChange={(e) => setMonth(e.target.value)}
+            className="w-44 sm:w-52 h-11 border border-[#d1bfa7] rounded-lg px-3 text-[#4c3c28] bg-white focus:outline-none focus:ring-2 focus:ring-[#c9b87a] shadow-sm transition-all"
+          >
+            {months.map((m, i) => (
+              <option key={i} value={m}>
+                {m}
+              </option>
+            ))}
+          </select>
+        </div>
+
+        {/* Category Filter */}
+        <div className="flex flex-col gap-1">
+          <label className="text-sm font-semibold mb-1 text-[#4c3c28]">
+            Travel Type
+          </label>
+          <select
+            value={category}
+            onChange={(e) => setCategory(e.target.value)}
+            className="w-44 sm:w-52 h-11 border border-[#d1bfa7] rounded-lg px-3 text-[#4c3c28] bg-white focus:outline-none focus:ring-2 focus:ring-[#c9b87a] shadow-sm transition-all"
           >
             {categories.map((c, i) => (
               <option key={i} value={c}>

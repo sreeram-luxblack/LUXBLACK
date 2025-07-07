@@ -55,14 +55,15 @@ export default function Groups() {
 
   return (
     <section className="bg-[#F8F5F0] py-[50px] md:py-[70px] px-4">
-      <h2 className="text-center text-[48px] font-semibold text-[#2C2C2C] mb-10 font-libre">
-        Choose Your Travel Style
+      <h2 className="text-center text-[30px] md:text-[48px] font-semibold text-[#2C2C2C] mb-10  ">
+       <span className="text-[40px] md:text-[48px]"> Choose Your </span><br className="block sm:hidden"></br> Travel Style
       </h2>
+
       <div className="flex flex-wrap justify-center gap-6 max-w-7xl mx-auto">
         {categories.map((cat, idx) => (
           <div
             key={idx}
-            className="group [perspective:1000px] h-[450px] sm:h-[500px] 2xl:h-[550px] w-[220px] sm:w-[240px] md:w-[250px] cursor-pointer"
+            className="group [perspective:1000px] h-[300px] sm:h-[500px] 2xl:h-[550px] w-full sm:w-[240px] md:w-[250px] cursor-pointer"
             onClick={() => setFlippedIndex(flippedIndex === idx ? null : idx)}
           >
             <div
@@ -85,11 +86,11 @@ export default function Groups() {
 
               {/* Back */}
               <div className="absolute border-[#dbc471] border-[1px] inset-0 [backface-visibility:hidden] [transform:rotateY(180deg)] bg-[#ffffff] rounded-lg p-3 shadow-md flex flex-col justify-center items-center space-y-3 overflow-auto">
-                <div className="flex flex-col gap-2">
+                <div className="flex flex-wrap gap-2 justify-center">
                   {cat.countries.map((country, i) => (
                     <div
                       key={i}
-                      className="w-32 sm:w-36 md:w-40 h-18 md::h-20 rounded overflow-hidden shadow-sm bg-white flex flex-col items-center justify-center border border-[#dbc471]"
+                      className="w-[48%] sm:w-36 md:w-40 h-20 rounded overflow-hidden shadow-sm bg-white flex flex-col items-center justify-center border border-[#dbc471]"
                     >
                       <Image
                         src={country.image}

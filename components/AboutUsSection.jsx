@@ -24,12 +24,12 @@ export default function AboutUsSection() {
     <section className="bg-[#F8F5F0] py-20 px-6 sm:px-10 text-center">
       <div className="max-w-4xl mx-auto space-y-5 mb-14">
         <h2 className="text-2xl sm:text-3xl font-playfair text-[#2C2C2C]">
-          We are not a travel agency.
+         Designed for ease, comfort and meaning
         </h2>
         <p className="text-[#2C2C2C] text-base font-inter">
-          We are curators of time, memory, and meaning.
-          <br />
-          For those who seek more than just refinations.
+          Each detail is intentional, created to bring calm to your routine, softness to your day, and  
+          <br className="hidden md:block"/>
+         purpose to your self-care. A ritual that feels as good as it looks.
         </p>
       </div>
 

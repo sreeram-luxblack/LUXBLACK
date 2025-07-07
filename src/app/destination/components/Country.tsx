@@ -270,7 +270,7 @@ export default function Country() {
                   <div className="md:w-1/2 w-full">
                     <ImageSlider images={card.images} />
                   </div>
-                  <div className="md:w-1/2 w-full p-4 bg-[#F8F5F0] flex flex-col justify-center">
+                  <div className="md:w-1/2 w-full p-4 bg-[#ffffff] flex flex-col justify-center">
                     <h3 className="text-xl font-bold text-[#2C2C2C] mb-2">
                       {card.title}
                     </h3>
