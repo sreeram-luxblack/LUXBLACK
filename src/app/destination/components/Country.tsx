@@ -7,7 +7,7 @@ import Image from "next/image";
 
 const dynamicCategories = [
   {
-    title: "HoneyMoons",
+    title: "Bali",
     bgImage: "/images/acc5.jpg",
     cards: [
       {
@@ -35,7 +35,7 @@ const dynamicCategories = [
     ],
   },
   {
-    title: "Family",
+    title: "Itley",
     bgImage: "/images/acc5.jpg",
     cards: [
       {
@@ -59,7 +59,7 @@ const dynamicCategories = [
     ],
   },
   {
-    title: "Couples",
+    title: "Spain",
     bgImage: "/images/acc5.jpg",
     cards: [
       {
@@ -83,7 +83,7 @@ const dynamicCategories = [
     ],
   },
   {
-    title: "Group",
+    title: "Australia",
     bgImage: "/images/acc5.jpg",
     cards: [
       {
@@ -106,8 +106,6 @@ const dynamicCategories = [
       },
     ],
   },
-  
-  
 ];
 
 function Card({
@@ -162,8 +160,18 @@ export default function Country() {
   const [openItem, setOpenItem] = useState<string | null>(null);
 
   return (
-    <section className="w-full px-4 sm:px-8 py-12 bg-[#ffffff]">
-      <h2 className="text-center text-[48px] font-semibold font-playfair text-[#2c2c2c] mb-10 font-libre">
+    <section className="relative w-full px-4 sm:px-8 py-12 overflow-hidden">
+      {/* Blurred Background Image */}
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: "url('/images/servicehero.jpg')",
+          filter: "blur(8px)",
+          transform: "scale(1.1)", // prevents edge blur gaps
+          opacity: "60%",
+        }}
+      ></div>
+      <h2 className="text-center relative z-10 text-[24px] md:text-[48px] font-semibold  text-[#292015] mb-10 ">
         Choose Your Destination
       </h2>
       <RadixAccordion.Root
@@ -171,22 +179,21 @@ export default function Country() {
         collapsible
         value={openItem || ""}
         onValueChange={(value) => setOpenItem(value || null)}
-        className="w-full space-y-4"
+        className="w-full space-y-4 relative z-10"
       >
         {dynamicCategories.map((category) => (
           <RadixAccordion.Item
             key={category.title}
             value={category.title}
-            className="border border-[#e0d7c4] rounded-xl bg-white overflow-hidden"
+            className="border border-[#e0d7c4] rounded-xl bg-[#fff0] overflow-hidden"
           >
             <RadixAccordion.Header>
-              <RadixAccordion.Trigger
+              {/* <RadixAccordion.Trigger
                 className="relative overflow-hidden w-full flex justify-between items-center px-6 py-4 text-lg sm:text-xl font-semibold text-[#C9B87A] border border-[#C9B87A] rounded-xl shadow-sm hover:shadow-md transition-all duration-300"
                 style={{
                   backgroundColor: "#F8F5F0",
                 }}
               >
-                {/* Blurred Background */}
                 <div
                   className="absolute inset-0 z-0"
                   style={{
@@ -197,10 +204,9 @@ export default function Country() {
                     transform: "scale(1.1)",
                   }}
                 />
-                {/* 🔷 Overlay for blur and darken effect */}
+
                 <div className="absolute inset-0 bg-white/30  z-0 rounded-xl" />
 
-                {/* 🔶 Actual Content */}
                 <div className="relative z-10 flex justify-between w-full items-center">
                   <span className="font-heading text-[#232222] font-sarif tracking-wide">
                     {category.title}
@@ -226,9 +232,9 @@ export default function Country() {
                     </svg>
                   </span>
                 </div>
-              </RadixAccordion.Trigger>
+              </RadixAccordion.Trigger> */}
 
-              {/* <RadixAccordion.Trigger className="w-full flex justify-between items-center px-6 py-4 text-lg sm:text-xl font-semibold text-[#C9B87A] bg-white border border-[#C9B87A] rounded-xl shadow-sm hover:shadow-md hover:bg-[#fffefc] transition-all duration-300">
+              <RadixAccordion.Trigger className="w-full flex justify-between items-center px-6 py-4 text-lg sm:text-xl font-semibold text-[#000000] bg-[#fff0] border border-[#000000] rounded-xl shadow-sm hover:shadow-md hover:bg-[#fffefc8a] transition-all duration-300">
                 <span className="font-heading tracking-wide">
                   {category.title}
                 </span>
@@ -239,7 +245,7 @@ export default function Country() {
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5 text-[#C9B87A]"
+                    className="h-5 w-5 text-[#000000]"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -252,7 +258,7 @@ export default function Country() {
                     />
                   </svg>
                 </span>
-              </RadixAccordion.Trigger> */}
+              </RadixAccordion.Trigger>
             </RadixAccordion.Header>
 
             <RadixAccordion.Content className="p-4 space-y-6 animate-slideDown ">
