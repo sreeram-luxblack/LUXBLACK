@@ -6,14 +6,16 @@ export default function Hero() {
   return (
     <section className="relative w-full h-screen overflow-hidden">
       {/* Background Video */}
-      <video
-        className="absolute top-0 left-0 w-full h-full object-cover z-0"
+     <video
         autoPlay
         muted
         loop
         playsInline
-        src="/videos/bgvideo.MP4" // Place the video in public/videos/
-      />
+        className="absolute inset-0 w-full h-full object-cover z-0 opacity-80"
+      >
+        <source src="/videos/bgvideo.MP4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
 
       {/* Overlay */}
       <div className="absolute inset-0  bg-opacity-40 z-10" />
