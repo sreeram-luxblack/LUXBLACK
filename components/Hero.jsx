@@ -11,14 +11,14 @@ export default function Hero() {
         muted
         loop
         playsInline
-        className="absolute inset-0 w-full h-full object-cover z-0 opacity-80"
+        className="absolute inset-0 w-full h-full object-cover z-0 opacity-100"
       >
-        <source src="/videos/bgvideo.MP4" type="video/mp4" />
+        <source src="/images/bgvideo.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
       {/* Overlay */}
-      <div className="absolute inset-0  bg-opacity-40 z-10" />
+      {/* <div className="absolute inset-0  bg-opacity-40 z-10" /> */}
 
       {/* Centered Text */}
       <div className="relative z-20 flex items-center justify-center h-full px-4 text-center">
