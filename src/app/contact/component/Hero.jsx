@@ -20,7 +20,7 @@ export default function Hero() {
           Let's Connect
         </h1>
         <p className="mt-4 text-lg sm:text-xl max-w-2xl text-[#F8F5F0] font-libre drop-shadow-md">
-          Whether you're dreaming or ready to go, we’re here to shape your next journey
+          Whether you're dreaming or ready to go, we’re here to shape your next journey.
         </p>
       </div>
     </section>
