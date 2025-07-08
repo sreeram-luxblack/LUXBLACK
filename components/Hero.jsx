@@ -12,7 +12,7 @@ export default function Hero() {
         muted
         loop
         playsInline
-        src="/videos/bg.MP4" // Place the video in public/videos/
+        src="/videos/bgvideo.MP4" // Place the video in public/videos/
       />
 
       {/* Overlay */}
