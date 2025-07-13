@@ -36,15 +36,15 @@ export default function Luxury() {
   ];
 
   return (
-    <section className="w-full bg-[#f8f5f0] py-16 px-4">
-      <h2 className="text-center text-[48px] font-semibold font-playfair text-[#2C2C2C] mb-10">
+    <section className="w-full bg-[#f8f5f0] pt-14 pb-7 md:py-16 px-4">
+      <h2 className="text-center text-[32px] md:text-[48px] font-semibold  text-[#2C2C2C] mb-10">
         Choose your Service
       </h2>
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 perspective">
         {services.map((service, index) => (
           <div
             key={index}
-            className="group [transform-style:preserve-3d] transition-transform duration-700 relative h-[600px] rounded-xl"
+            className="group [transform-style:preserve-3d] transition-transform duration-700 relative h-[400px] md:h-[600px] rounded-xl"
           >
             {/* FRONT */}
             <div className="absolute inset-0 rounded-xl overflow-hidden shadow-lg backface-hidden">
