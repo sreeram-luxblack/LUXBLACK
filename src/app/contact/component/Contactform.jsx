@@ -225,8 +225,8 @@ export default function Contactform() {
     phone: "",
     contactMode: "Call",
     bestTimeToReach: "",
-    adults: "1",
-    children: "0",
+    adults: "",
+    children: "",
     roomType: "One Room / Couple",
     departureCity: "",
     tripDuration: "",
@@ -319,7 +319,7 @@ export default function Contactform() {
         onSubmit={handleSubmit}
         className="bg-white rounded-xl shadow-lg max-w-2xl w-full p-4 sm:p-8 space-y-5"
       >
-        <h2 className="text-center text-2xl sm:text-3xl font-playfair text-[#2C2C2C] mb-8">
+        <h2 className="text-center text-2xl sm:text-3xl  text-[#2C2C2C] mb-8">
           Begin Curating My Journey
         </h2>
 
