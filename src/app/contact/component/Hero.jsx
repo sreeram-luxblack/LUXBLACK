@@ -16,12 +16,11 @@ export default function Hero() {
 
       {/* Overlay Text */}
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4 sm:px-8">
-        <h1 className="text-4xl sm:text-6xl font-playfair text-[#F8F5F0] drop-shadow-lg tracking-wide">
+        <h1 className="text-4xl sm:text-6xl text-[#F8F5F0] drop-shadow-lg tracking-wide">
           Let's Connect
         </h1>
-        <p className="mt-4 text-lg sm:text-xl max-w-2xl text-[#F8F5F0] font-libre drop-shadow-md">
-          Whether you're dreaming or ready to go, we’re here to shape your next
-          journey.
+        <p className="mt-8 text-lg sm:text-xl max-w-2xl text-[#F8F5F0]  drop-shadow-md">
+          Let’s begin curating your escape. Please share a few details so our travel atelier can design your journey with precision and care
         </p>
       </div>
     </section>
