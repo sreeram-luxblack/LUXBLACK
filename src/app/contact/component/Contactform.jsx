@@ -209,7 +209,6 @@
 //   );
 // }
 
-
 "use client";
 
 import { useState } from "react";
@@ -251,11 +250,13 @@ export default function Contactform() {
       newErrors.email = "Valid email is required.";
     if (!formData.phone || !/^\d{10,}$/.test(formData.phone))
       newErrors.phone = "Valid phone number required.";
-    if (!formData.destination) newErrors.destination = "Destination is required.";
+    if (!formData.destination)
+      newErrors.destination = "Destination is required.";
     if (!formData.fromDate || !formData.toDate)
       newErrors.dates = "Both travel dates are required.";
     if (!formData.adults) newErrors.adults = "Number of adults is required.";
-    if (!formData.departureCity) newErrors.departureCity = "Departure city required.";
+    if (!formData.departureCity)
+      newErrors.departureCity = "Departure city required.";
     return newErrors;
   };
 
@@ -324,7 +325,12 @@ export default function Contactform() {
         </h2>
 
         {/* Destination */}
-        <select name="destination" value={formData.destination} onChange={handleChange} className="input">
+        <select
+          name="destination"
+          value={formData.destination}
+          onChange={handleChange}
+          className="input"
+        >
           <option value="">Preferred Destination *</option>
           <option>Maldives</option>
           <option>Seychelles</option>
@@ -337,53 +343,133 @@ export default function Contactform() {
 
         {/* Dates */}
         <div className="grid grid-cols-2 gap-4">
-          <input type="date" name="fromDate" value={formData.fromDate} onChange={handleChange} className="input" />
-          <input type="date" name="toDate" value={formData.toDate} onChange={handleChange} className="input" />
+          <input
+            type="date"
+            name="fromDate"
+            value={formData.fromDate}
+            onChange={handleChange}
+            className="input"
+          />
+          <input
+            type="date"
+            name="toDate"
+            value={formData.toDate}
+            onChange={handleChange}
+            className="input"
+          />
         </div>
         {errors.dates && <p className="error">{errors.dates}</p>}
 
-        <select name="flexibleDates" value={formData.flexibleDates} onChange={handleChange} className="input">
+        <select
+          name="flexibleDates"
+          value={formData.flexibleDates}
+          onChange={handleChange}
+          className="input"
+        >
           <option value="No">Flexible Dates?</option>
           <option value="Yes">Yes</option>
           <option value="No">No</option>
         </select>
 
         {/* Contact Info */}
-        <input name="name" placeholder="Full Name *" value={formData.name} onChange={handleChange} className="input" />
+        <input
+          name="name"
+          placeholder="Full Name *"
+          value={formData.name}
+          onChange={handleChange}
+          className="input"
+        />
         {errors.name && <p className="error">{errors.name}</p>}
 
-        <input name="email" placeholder="Email *" value={formData.email} onChange={handleChange} className="input" />
+        <input
+          name="email"
+          placeholder="Email *"
+          value={formData.email}
+          onChange={handleChange}
+          className="input"
+        />
         {errors.email && <p className="error">{errors.email}</p>}
 
-        <input name="phone" placeholder="Phone Number *" value={formData.phone} onChange={handleChange} className="input" />
+        <input
+          name="phone"
+          placeholder="Phone Number *"
+          value={formData.phone}
+          onChange={handleChange}
+          className="input"
+        />
         {errors.phone && <p className="error">{errors.phone}</p>}
 
-        <select name="contactMode" value={formData.contactMode} onChange={handleChange} className="input">
+        <select
+          name="contactMode"
+          value={formData.contactMode}
+          onChange={handleChange}
+          className="input"
+        >
           <option value="Call">Preferred Contact Mode: Call</option>
           <option value="WhatsApp">WhatsApp</option>
           <option value="Email">Email</option>
         </select>
 
-        <input name="bestTimeToReach" placeholder="Best Time to Reach You" value={formData.bestTimeToReach} onChange={handleChange} className="input" />
+        <input
+          name="bestTimeToReach"
+          placeholder="Best Time to Reach You"
+          value={formData.bestTimeToReach}
+          onChange={handleChange}
+          className="input"
+        />
 
         {/* People */}
         <div className="grid grid-cols-2 gap-4">
-          <input type="number" name="adults" placeholder="Adults *" min="1" value={formData.adults} onChange={handleChange} className="input" />
-          <input type="number" name="children" placeholder="Children" min="0" value={formData.children} onChange={handleChange} className="input" />
+          <input
+            type="number"
+            name="adults"
+            placeholder="Adults *"
+            min="1"
+            value={formData.adults}
+            onChange={handleChange}
+            className="input"
+          />
+          <input
+            type="number"
+            name="children"
+            placeholder="Children"
+            min="0"
+            value={formData.children}
+            onChange={handleChange}
+            className="input"
+          />
         </div>
         {errors.adults && <p className="error">{errors.adults}</p>}
 
-        <select name="roomType" value={formData.roomType} onChange={handleChange} className="input">
+        <select
+          name="roomType"
+          value={formData.roomType}
+          onChange={handleChange}
+          className="input"
+        >
           <option>One Room / Couple</option>
           <option>Multiple Rooms / Group</option>
           <option>Family Suite / Villa</option>
         </select>
 
-        <input name="departureCity" placeholder="Departure City *" value={formData.departureCity} onChange={handleChange} className="input" />
-        {errors.departureCity && <p className="error">{errors.departureCity}</p>}
+        <input
+          name="departureCity"
+          placeholder="Departure City *"
+          value={formData.departureCity}
+          onChange={handleChange}
+          className="input"
+        />
+        {errors.departureCity && (
+          <p className="error">{errors.departureCity}</p>
+        )}
 
         {/* Duration */}
-        <select name="tripDuration" value={formData.tripDuration} onChange={handleChange} className="input">
+        <select
+          name="tripDuration"
+          value={formData.tripDuration}
+          onChange={handleChange}
+          className="input"
+        >
           <option value="">Trip Duration</option>
           <option>3–5 Nights</option>
           <option>6–8 Nights</option>
@@ -392,7 +478,12 @@ export default function Contactform() {
         </select>
 
         {/* Budget */}
-        <select name="budget" value={formData.budget} onChange={handleChange} className="input">
+        <select
+          name="budget"
+          value={formData.budget}
+          onChange={handleChange}
+          className="input"
+        >
           <option value="">Estimated Budget (per person)</option>
           <option>₹75,000 – ₹1,25,000</option>
           <option>₹1,25,000 – ₹2,00,000</option>
@@ -402,7 +493,12 @@ export default function Contactform() {
         </select>
 
         {/* Meal Plan */}
-        <select name="mealPlan" value={formData.mealPlan} onChange={handleChange} className="input">
+        <select
+          name="mealPlan"
+          value={formData.mealPlan}
+          onChange={handleChange}
+          className="input"
+        >
           <option value="">Preferred Meal Plan</option>
           <option>Breakfast Only (CP)</option>
           <option>Half Board (Breakfast + Dinner)</option>
@@ -412,7 +508,12 @@ export default function Contactform() {
         </select>
 
         {/* Flights */}
-        <select name="flightsBooked" value={formData.flightsBooked} onChange={handleChange} className="input">
+        <select
+          name="flightsBooked"
+          value={formData.flightsBooked}
+          onChange={handleChange}
+          className="input"
+        >
           <option value="">Flights Booked?</option>
           <option>Yes – I’ve booked my flights</option>
           <option>No – I need help with flights too</option>
@@ -437,7 +538,9 @@ export default function Contactform() {
           {isSubmitting ? "Sending..." : "Submit Enquiry"}
         </button>
 
-        {status && <p className="text-center text-sm text-green-600 mt-2">{status}</p>}
+        {status && (
+          <p className="text-center text-sm text-green-600 mt-2">{status}</p>
+        )}
       </form>
 
       <style jsx>{`
@@ -460,5 +563,3 @@ export default function Contactform() {
     </section>
   );
 }
-
-

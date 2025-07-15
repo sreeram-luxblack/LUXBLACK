@@ -4,23 +4,25 @@ import {
   GiSailboat,
   GiMeal,
   GiGreekTemple,
+  
 } from "react-icons/gi";
+import { FaUmbrellaBeach, FaShip, FaPlaneDeparture, FaCity } from "react-icons/fa";
 
 const experiences = [
   {
-    icon: GiElephant,
+    icon: FaUmbrellaBeach, // Beach umbrella – perfect for island romance
     title: "Romantic Island Hideaways",
   },
   {
-    icon: GiSailboat,
+    icon: FaShip, // Cruise ship icon
     title: "Boutique Cruise Voyages",
   },
   {
-    icon: GiMeal,
+    icon: FaPlaneDeparture, // Island hopping escape
     title: "Island Hopper Escapes",
   },
   {
-    icon: GiGreekTemple,
+    icon: FaCity, // Urban skyline
     title: "Skyline City Breaks",
   },
 ];

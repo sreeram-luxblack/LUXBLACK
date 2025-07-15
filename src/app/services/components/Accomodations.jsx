@@ -175,7 +175,7 @@ export default function Accomodation() {
           >
             {blogs.map((blog, i) => (
               <SwiperSlide key={i}>
-                <div className="bg-[#ffffff79] h-fit rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                <div className="bg-[#ffffff79] h-[300px] rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
                   {/* <div className="relative w-full h-[220px]">
                     <Image
                       src={blog.image}
@@ -204,18 +204,27 @@ export default function Accomodation() {
           </Swiper>
         </div>
       </div>
-      <style jsx global>{`
-        .swiper-button-next,
-        .swiper-button-prev {
-          color: #fff !important; /* Gold color */
-        }
+     <style jsx global>{`
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: #fff !important;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5); /* subtle shadow */
+    filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.4)); /* stronger outer glow */
+    transition: transform 0.2s ease;
+  }
 
-        .swiper-button-next::after,
-        .swiper-button-prev::after {
-          font-size: 34px;
-          font-weight: bold;
-        }
-      `}</style>
+  .swiper-button-next:hover,
+  .swiper-button-prev:hover {
+    transform: scale(1.1);
+  }
+
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    font-size: 34px;
+    font-weight: bold;
+  }
+`}</style>
+
     </section>
   );
 }
