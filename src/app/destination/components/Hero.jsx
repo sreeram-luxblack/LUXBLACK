@@ -5,7 +5,7 @@ import React from "react";
 
 export default function Hero() {
   return (
-    <section className="relative w-full h-screen overflow-hidden">
+    <section className="relative w-full h-[85vh] overflow-hidden">
       {/* Background Video */}
       <Image
         src="/images/destination.jpg" // Replace with your image path
@@ -23,11 +23,12 @@ export default function Hero() {
       <div className="relative z-20 flex items-center justify-center h-full px-4 text-center">
         <div className="text-white max-w-3xl">
           <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-            Discover Your Dream Destination
+           Go Beyond the Map <br></br> Where Your Story Begins
+
           </h1>
-          <p className="mt-4 text-lg md:text-[20px]  rounded-[2px] border-b-[4px] pb-3 border-[#BB9753] text-[#ffffff] font-medium">
+          {/* <p className="mt-4 text-lg md:text-[20px]  rounded-[2px] border-b-[4px] pb-3 border-[#BB9753] text-[#ffffff] font-medium">
             Luxury experiences curated for your journey
-          </p>
+          </p> */}
         </div>
       </div>
     </section>

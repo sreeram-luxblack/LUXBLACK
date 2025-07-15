@@ -5,33 +5,31 @@ import {
   FaMapMarkedAlt,
   FaPhoneAlt,
   FaUserTie,
+  FaGlobeAmericas,
+  FaCogs,
+  FaHeadset,
 } from "react-icons/fa";
 
 const reasons = [
   {
-    icon: FaAward,
-    title: "Award-winning planners",
-    color: "#C9B87A",
+    icon: FaGlobeAmericas,
+    title: "Top-Tier Destination Experts",
+    color: "#C9B87A", // Luxury gold
   },
   {
-    icon: FaBoxOpen,
-    title: "No-obligation quotes",
-    color: "#C2703D",
-  },
-  {
-    icon: FaMapMarkedAlt,
-    title: "No planning fees",
-    color: "#479C91",
-  },
-  {
-    icon: FaPhoneAlt,
-    title: "24/7 on the ground support",
-    color: "#3F7CA3",
+    icon: FaCogs,
+    title: "Tailor-Made, Not Off-the-Shelf",
+    color: "#C2703D", // Warm bronze
   },
   {
     icon: FaUserTie,
-    title: "Expert private guides",
-    color: "#8964A0",
+    title: "Trusted by Business Leaders",
+    color: "#479C91", // Elite green
+  },
+  {
+    icon: FaHeadset,
+    title: "Concierge Support, 24/7 Worldwide",
+    color: "#3F7CA3", // Calm blue
   },
 ];
 
@@ -43,14 +41,14 @@ export default function Whylux() {
           Why LuxBlack?
         </h2>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 justify-items-center">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 justify-items-center">
           {reasons.map(({ icon: Icon, title, color }, idx) => (
             <div
               key={idx}
               className="flex flex-col items-center text-center space-y-3"
             >
               <Icon size={48} style={{ color }} />
-              <p className="text-sm text-[#2C2C2C] font-libre max-w-[110px] ">
+              <p className="text-sm text-[#2C2C2C] font-libre max-w-[140px] ">
                 {title}
               </p>
             </div>

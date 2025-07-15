@@ -56,7 +56,7 @@ export default function Groups() {
   return (
     <section className="bg-[#F8F5F0] py-[50px] md:py-[70px] px-4">
       <h2 className="text-center text-[30px] md:text-[48px] font-semibold text-[#2C2C2C] mb-10  ">
-       <span className="text-[40px] md:text-[48px]"> Choose Your </span><br className="block sm:hidden"></br> Travel Style
+       <span className=""> Select Your  </span><br className="block sm:hidden text-[40px] md:text-[48px]"></br>Bespoke Journey
       </h2>
 
       <div className="flex flex-wrap justify-center gap-6 max-w-7xl mx-auto">

@@ -8,24 +8,31 @@ import "swiper/css/navigation";
 
 const testimonials = [
   {
-    name: "Emily Carter",
-    title: "Frequent Jet Setter",
+    name: "Neha & Karan A.",
+    title: "Honeymooners",
     message:
-      "Every detail of my trip was curated to perfection. It felt like luxury tailored just for me. I won’t travel any other way now.",
+      "Everything was taken care of without us having to ask. From the private dinners to the surprise upgrades, it was beyond what we imagined.",
   },
   {
-    name: "Liam Bennett",
-    title: "Business Traveler",
+    name: "Rhea D.",
+    title: "Family Traveller",
     message:
-      "Professional, seamless, and indulgent. I trust them with every aspect of my travel, both work and leisure.",
+      "Our trip felt effortless. Every element was considered — we could just live in the moment while everything unfolded perfectly.",
   },
   {
-    name: "Isabella Ruiz",
-    title: "Luxury Enthusiast",
+    name: "Aarav S.",
+    title: "Tech Entrepreneur",
     message:
-      "From the private villa to the curated wine experiences, everything was unforgettable. They redefine the word ‘escape’.",
+      "From start to finish, the service was seamless. The team operated with quiet precision — exactly how true travel should feel.",
+  },
+  {
+    name: "Meera K.",
+    title: "International Legal Advisor",
+    message:
+      "They curated our journey with taste, restraint, and insight. Nothing was overdone — just beautifully balanced, from start to finish.",
   },
 ];
+
 
 export default function Testimonial() {
   return (

@@ -11,16 +11,16 @@ export default function Hero() {
         layout="fill"
         objectFit="cover"
         priority
-        className="brightness-[0.75]"
+        className="brightness-[0.55]"
       />
 
       {/* Overlay Text */}
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4 sm:px-8">
-        <h1 className="text-4xl sm:text-6xl font-playfair text-[#F8F5F0] drop-shadow-lg tracking-wide">
-          Let's Connect
+        <h1 className="text-4xl sm:text-6xl  text-[#F8F5F0] drop-shadow-lg tracking-wide">
+         Destinations, Reimagined for You
         </h1>
-        <p className="mt-4 text-lg sm:text-xl max-w-2xl text-[#ffffff] font-libre drop-shadow-md">
-          Whether you're dreaming or ready to go, we’re here to shape your next journey.
+        <p className="mt-8 text-lg sm:text-xl max-w-2xl text-[#ffffff] font-libre drop-shadow-md">
+          From daydreams to departure, your next journey which is, effortless and extraordinary, begins here.
         </p>
       </div>
     </section>

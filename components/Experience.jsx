@@ -9,19 +9,19 @@ import {
 const experiences = [
   {
     icon: GiElephant,
-    title: "Luxury Safari",
+    title: "Romantic Island Hideaways",
   },
   {
     icon: GiSailboat,
-    title: "Private Yacht Cruises",
+    title: "Boutique Cruise Voyages",
   },
   {
     icon: GiMeal,
-    title: "Gourmet Getaways",
+    title: "Island Hopper Escapes",
   },
   {
     icon: GiGreekTemple,
-    title: "Cultural Immersions",
+    title: "Skyline City Breaks",
   },
 ];
 

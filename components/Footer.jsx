@@ -55,7 +55,7 @@ export default function Footer() {
                 href="mailto:info@blacktomato.com"
                 className="hover:text-[#C9B87A] transition-colors"
               >
-                info@blacktomato.com
+                sreeram@luxblackone.com
               </a>
               <MdArrowForwardIos
                 size={14}
@@ -64,7 +64,11 @@ export default function Footer() {
             </div>
             <div className="flex items-center gap-2">
               <HiOutlinePhone size={20} />
-              <p>+1 (123) 456-7891</p>
+              <p>+91 8111 8333 91</p>
+            </div>
+            <div className="flex items-center gap-2">
+              <HiOutlinePhone size={20} />
+              <p>+91 63817 97305</p>
             </div>
           </div>
 
