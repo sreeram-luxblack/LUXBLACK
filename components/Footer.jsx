@@ -55,7 +55,7 @@ export default function Footer() {
                 href="mailto:info@blacktomato.com"
                 className="hover:text-[#C9B87A] transition-colors"
               >
-                sreeram@luxblackone.com
+                info@luxblackone.com
               </a>
               <MdArrowForwardIos
                 size={14}
@@ -81,7 +81,7 @@ export default function Footer() {
               </span>{" "}
               | Developed by{" "}
               <a
-                href="https://sixthgenx.netlify.app/"
+                href="https://sixthgenx.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-semibold hover:text-[#C9B87A] transition-colors"

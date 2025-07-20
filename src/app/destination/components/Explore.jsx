@@ -218,7 +218,7 @@ export default function Explore() {
   return (
     <div className="p-6 sm:p-10 bg-[#ffffff] lg:pb-22 min-h-fit text-[#4c3c28]">
       <h1 className="text-3xl sm:text-4xl font-bold text-center mb-6 sm:mb-10">
-        Start Your Journey
+        Select your Travel by month and style
       </h1>
 
       {/* Filters */}
@@ -310,7 +310,7 @@ export default function Explore() {
               />
 
               {/* Status Tag */}
-              {item.status && (
+              {/* {item.status && (
                 <span
                   className={`absolute top-2 left-2 text-white text-[10px] sm:text-xs px-4  py-1.5 rounded-full shadow-sm
       ${
@@ -324,7 +324,7 @@ export default function Explore() {
                 >
                   {item.status}
                 </span>
-              )}
+              )} */}
             </div>
 
             <div className="p-4 xl:p-6 2xl:p-8">

@@ -4,105 +4,150 @@
 import { useState, useEffect } from "react";
 import * as RadixAccordion from "@radix-ui/react-accordion";
 import Image from "next/image";
+import Link from "next/link";
 
 const dynamicCategories = [
   {
-    title: "Bali",
+    title: "Maldives",
     bgImage: "/images/acc5.jpg",
     cards: [
       {
-        title: "Dubai Elite Escape",
-        description: "Indulge in ultra-luxury experiences.",
-        bullets: ["7-star hotels", "Private yachts", "Sky dining"],
-        images: ["/images/dest1.jpg", "/images/dest2.jpg", "/images/dest3.jpg"],
-      },
-      {
-        title: "French Riviera Glamour",
-        description: "Relax like royalty in Côte d’Azur.",
-        bullets: ["Designer shopping", "Private beaches", "Château stays"],
-        images: ["/images/dest3.jpg", "/images/dest1.jpg", "/images/dest2.jpg"],
-      },
-      {
-        title: "Luxury Safari in Kenya",
-        description: "See the wild in the most refined way.",
+        title: "LuxBlack Editions – Ultra Luxury",
+        description: "",
         bullets: [
-          "Private game drives",
-          "Luxury lodges",
-          "Gourmet bush dining",
+          "Private island buyouts (e.g., Velaa Private Island, Cheval Blanc Randheli) with private jet transfers.",
+          "Underwater fine dining with live orchestral music.",
+          "Private yacht charters, butler villas, and curated reef diving.",
         ],
-        images: ["/images/dest2.jpg", "/images/dest3.jpg", "/images/dest1.jpg"],
-      },
-    ],
-  },
-  {
-    title: "Itley",
-    bgImage: "/images/acc5.jpg",
-    cards: [
-      {
-        title: "Family Fun in Bali",
-        description: "Enjoy serene beaches with activities for all ages.",
-        bullets: ["Kid-friendly resorts", "Local tours", "Beachside dinners"],
         images: ["/images/dest1.jpg", "/images/dest2.jpg", "/images/dest3.jpg"],
       },
       {
-        title: "Explore Rome",
-        description: "History and fun for the entire family.",
-        bullets: ["Colosseum tours", "Pizza-making classes", "Family hotels"],
-        images: ["/images/dest2.jpg", "/images/dest3.jpg", "/images/dest1.jpg"],
-      },
-      {
-        title: "Tokyo with Kids",
-        description: "Tech meets tradition in a family-friendly city.",
-        bullets: ["Theme parks", "Sushi classes", "Cultural shows"],
-        images: ["/images/dest3.jpg", "/images/dest1.jpg", "/images/dest2.jpg"],
-      },
-    ],
-  },
-  {
-    title: "Spain",
-    bgImage: "/images/acc5.jpg",
-    cards: [
-      {
-        title: "Romantic Paris",
-        description: "Stroll hand-in-hand along the Seine.",
-        bullets: ["Eiffel Tower dinner", "Seine cruise", "Wine tasting"],
+        title: "LuxBlack Signature Collections – Mid Luxury",
+        description: "",
+        bullets: [
+          "Overwater villas at Baros, Anantara Kihavah, or Taj Exotica.",
+          "Sunset cruises, spa rituals, and underwater wine pairings.",
+          "Floating breakfasts and private beach cinema nights.",
+        ],
         images: ["/images/dest1.jpg", "/images/dest2.jpg", "/images/dest3.jpg"],
       },
       {
-        title: "Maldives Escape",
-        description: "Private overwater villas and clear waters.",
-        bullets: ["Candlelit dinners", "Couples spa", "Snorkeling"],
-        images: ["/images/dest2.jpg", "/images/dest3.jpg", "/images/dest1.jpg"],
-      },
-      {
-        title: "Venetian Dream",
-        description: "Float through romantic canals.",
-        bullets: ["Gondola rides", "Historic charm", "Italian cuisine"],
-        images: ["/images/dest3.jpg", "/images/dest1.jpg", "/images/dest2.jpg"],
+        title: "LuxBlack One Collections – Everyday Luxury",
+        description: "",
+        bullets: [
+          "Ocean view villas at VARU, Cocoon, or Sun Siyam Olhuveli.",
+          "Speedboat transfers and semi-private excursions.",
+          "Candle-lit beach dinners and reef snorkeling tours.",
+        ],
+        images: ["/images/dest1.jpg", "/images/dest2.jpg", "/images/dest3.jpg"],
       },
     ],
   },
   {
-    title: "Australia",
+    title: "Mauritius",
     bgImage: "/images/acc5.jpg",
     cards: [
       {
-        title: "Thailand Group Adventure",
-        description: "Enjoy vibrant markets and island hopping together.",
-        bullets: ["Group boat tours", "Street food walks", "Temple visits"],
-        images: ["/images/dest1.jpg", "/images/dest3.jpg", "/images/dest2.jpg"],
+        title: "LuxBlack Editions – Ultra Luxury",
+        description: "",
+        bullets: [
+          "Presidential suite at One&Only Le Saint Géran, helicopter transfers.",
+          "Yacht sailing and private island picnics.",
+          "Personal shopping, spa journeys, and exclusive golf access.",
+        ],
+        images: ["/images/dest1.jpg", "/images/dest2.jpg", "/images/dest3.jpg"],
       },
       {
-        title: "Swiss Alps Trek",
-        description: "Bond with your crew in the breathtaking Alps.",
-        bullets: ["Chalet stays", "Scenic hikes", "Group photography"],
-        images: ["/images/dest3.jpg", "/images/dest2.jpg", "/images/dest1.jpg"],
+        title: "LuxBlack Signature Collections – Mid Luxury",
+        description: "",
+        bullets: [
+          "Beachfront resorts like Heritage Le Telfair, JW Marriott Mauritius.",
+          "Island hopping, underwater scooter rides.",
+          "Rum tasting and cultural immersions.",
+        ],
+        images: ["/images/dest1.jpg", "/images/dest2.jpg", "/images/dest3.jpg"],
       },
       {
-        title: "Morocco Discovery",
-        description: "Explore souks and deserts in a shared adventure.",
-        bullets: ["Camel rides", "Desert camps", "Cultural workshops"],
-        images: ["/images/dest2.jpg", "/images/dest1.jpg", "/images/dest3.jpg"],
+        title: "LuxBlack One Collections – Everyday Luxury",
+        description: "",
+        bullets: [
+          "All-inclusive stays at Zilwa Attitude, Veranda, Tamassa.",
+          "Group excursions to Île aux Cerfs.",
+          "Wellness sessions and scenic bike rides.",
+        ],
+        images: ["/images/dest1.jpg", "/images/dest2.jpg", "/images/dest3.jpg"],
+      },
+    ],
+  },
+  {
+    title: "Dubai",
+    bgImage: "/images/acc5.jpg",
+    cards: [
+      {
+        title: "LuxBlack Editions – Ultra Luxury",
+        description: "",
+        bullets: [
+          "Burj Al Arab Sky Suite, Atlantis Royal Penthouse, Rolls Royce.",
+          "Private yacht parties, helicopter desert rides.",
+          "Michelin dining with celebrity chefs.",
+        ],
+        images: ["/images/dest1.jpg", "/images/dest2.jpg", "/images/dest3.jpg"],
+      },
+      {
+        title: "LuxBlack Signature Collections – Mid Luxury",
+        description: "",
+        bullets: [
+          "Address Sky View, Palazzo Versace infinity pool suites.",
+          "Desert safari in Range Rover, gold souk shopping.",
+          "Rooftop fine dining and private Burj Khalifa access.",
+        ],
+        images: ["/images/dest1.jpg", "/images/dest2.jpg", "/images/dest3.jpg"],
+      },
+      {
+        title: "LuxBlack One Collections – Everyday Luxury",
+        description: "",
+        bullets: [
+          "Rove La Mer, Media One, Radisson Blu Waterfront.",
+          "Dhow dinner cruise, Miracle Garden tours.",
+          "Premium desert camp experience.",
+        ],
+        images: ["/images/dest1.jpg", "/images/dest2.jpg", "/images/dest3.jpg"],
+      },
+    ],
+  },
+  {
+    title: "Vietnam",
+    bgImage: "/images/acc5.jpg",
+    cards: [
+      {
+        title: "LuxBlack Editions – Ultra Luxury",
+        description: "",
+        bullets: [
+          "Private cruise in Ha Long Bay with curated dining.",
+          "Stay at Amanoi or Six Senses Con Dao with wellness concierge.",
+          "Helicopter transfers to ancient sites, Michelin dining.",
+        ],
+        images: ["/images/dest1.jpg", "/images/dest2.jpg", "/images/dest3.jpg"],
+      },
+      {
+        title: "LuxBlack Signature Collections – Mid Luxury",
+        description: "",
+        bullets: [
+          "Boutique spa resorts like Fusion Maia, An Lam Retreats.",
+          "Vespa street food tours, organic cooking classes.",
+          "Scenic luxury train journeys.",
+        ],
+        images: ["/images/dest1.jpg", "/images/dest2.jpg", "/images/dest3.jpg"],
+      },
+      {
+        title: "LuxBlack One Collections – Everyday Luxury",
+        description: "",
+        bullets: [
+          "4-star stays at La Siesta Hanoi, Allegro Hoi An, Pilgrimage Hue.",
+          "Group Ha Long Bay cruise, cultural city tours.",
+          "Coffee tastings and wellness massages.",
+        ],
+        images: ["/images/dest1.jpg", "/images/dest2.jpg", "/images/dest3.jpg"],
       },
     ],
   },
@@ -172,7 +217,7 @@ export default function Country() {
         }}
       ></div>
       <h2 className="text-center relative z-10 text-[24px] md:text-[48px] font-semibold  text-[#292015] mb-10 ">
-        Choose Your Destination
+        Select your escape
       </h2>
       <RadixAccordion.Root
         type="single"
@@ -282,9 +327,11 @@ export default function Country() {
                         <li key={idx}>{point}</li>
                       ))}
                     </ul>
-                    <button className="mt-4 self-start bg-[#C9B87A] text-white px-4 py-1.5 rounded-lg hover:bg-[#bda865] transition-colors shadow-md text-sm">
+                    <Link href={"/contact"}>
+                    <button className="mt-4 self-start cursor-pointer bg-[#C9B87A] text-white px-4 py-1.5 rounded-lg hover:bg-[#bda865] transition-colors shadow-md text-sm">
                       Enquire Now
                     </button>
+                    </Link>
                   </div>
                 </Card>
               ))}

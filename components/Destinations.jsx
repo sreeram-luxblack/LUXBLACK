@@ -4,55 +4,51 @@ import React, { useState } from "react";
 
 const destinations = [
   {
-    title: "Acropolis of Athens",
-    subtitle: "Ancient Wonders Await",
+    title: "Maldives",
+    subtitle: "Private Islands & Ocean Dreams",
     image: "/images/dest2.jpg",
     description:
-      "The Acropolis of Athens is an ancient citadel located on a rocky outcrop above the city of Athens and contains the remains of several ancient buildings of great architectural and historic significance.",
+      "Private overwater villas, champagne sunsets, and the quiet rhythm of the ocean—it’s where time slows and the sea speaks in soft whispers.",
     points: [
-      "Home to the Parthenon",
-      "Symbol of classical spirit",
-      "World Heritage Site",
-      "Historical landmark of Greece",
+      " Private candle-lit dinners on secluded sandbanks",
+      "Personalized spa rituals in overwater pavilions",
+      "Sunrise seaplane journeys over turquoise atolls",
     ],
   },
   {
-    title: "Bali",
-    subtitle: "Island Paradise",
+    title: "Mauritius",
+    subtitle: "Tropical Bliss & Island Culture",
     image: "/images/dest2.jpg",
     description:
-      "Bali is known for its forested volcanic mountains, iconic rice paddies, beaches and coral reefs. It is part of the Indonesian archipelago.",
+      "Lush volcanic peaks meet sapphire lagoons. Mauritius is where barefoot luxury dances with island soul.",
     points: [
-      "Famous for temples",
-      "Breathtaking beaches",
-      "Rich culture and festivals",
-      "Great for surfing",
+      "Helicopter transfers to remote beach resorts",
+      "Private rum tastings on historic plantations",
+      "Sunset catamaran cruises with live saxophone",
     ],
   },
   {
-    title: "Swiss Alps",
-    subtitle: "Majestic Peaks",
+    title: "Dubai",
+    subtitle: "Desert Glamour & Sky High",
     image: "/images/dest2.jpg",
     description:
-      "The Swiss Alps are renowned for their majestic beauty, world-class skiing resorts and charming alpine villages.",
+      " Golden dunes by day, glittering skyline by night—Dubai is a world built on wonder, indulgence, and imagination.",
     points: [
-      "Perfect for skiing",
-      "Scenic train rides",
-      "Picturesque landscapes",
-      "Ideal for hiking",
+      "Desert safaris in vintage Land Rovers with gourmet picnics",
+      "Sky-high dining in the clouds of Burj Khalifa",
+      " Yacht charters along the Palm with butler service",
     ],
   },
   {
-    title: "Kyoto, Japan",
-    subtitle: "Cultural Heritage",
+    title: "Vietnam",
+    subtitle: "Heritage Trails & Hidden Bays",
     image: "/images/dest2.jpg",
     description:
-      "Kyoto, once the capital of Japan, is a city on the island of Honshu. It's famous for its numerous classical Buddhist temples, gardens, imperial palaces, Shinto shrines and traditional wooden houses.",
+      "Cruise through emerald bays, wander lantern-lit towns, and let every meal feel like poetry—Vietnam is gentle, vibrant, and endlessly layered.",
     points: [
-      "Historic temples",
-      "Beautiful autumn leaves",
-      "Traditional tea houses",
-      "Cultural festivals",
+      "Overnight cruises through the limestone karsts of Ha Long Bay",
+      "Chef-led culinary journeys in Hanoi’s secret kitchens",
+      "Wellness retreats in ancient riverside temples",
     ],
   },
 ];
