@@ -7,180 +7,170 @@ const countries = [
   {
     title: "Maldives",
     subtitle: "Overwater Serenity",
-    image: "/images/dest2.jpg",
+    image: "/home/mal1.jpg",
     description:
       "Private overwater villas, champagne sunsets, and the quiet rhythm of the ocean—it’s where time slows and the sea speaks in soft whispers.",
-    months: ["January", "February", "December"],
+    months: ["January", "February", "March", "November", "December"],
     categories: ["honeymoon", "luxury", "couple"],
-    status: "Recommended ",
-  },
-  {
-    title: "Mauritius",
-    subtitle: "Island Soul & Barefoot Luxury",
-    image: "/images/dest2.jpg",
-    description:
-      "Lush volcanic peaks meet sapphire lagoons. Mauritius is where barefoot luxury dances with island soul.",
-    months: ["March", "April", "November"],
-    categories: ["honeymoon", "family", "luxury"],
-    status: "Trending🔥",
+    status: "Recommended",
   },
   {
     title: "Dubai",
     subtitle: "World of Wonder & Indulgence",
-    image: "/images/dest2.jpg",
+    image: "/home/dub1.jpg",
     description:
       "Golden dunes by day, glittering skyline by night—Dubai is a world built on wonder, indulgence, and imagination.",
-    months: ["October", "December", "February"],
+    months: ["January", "February", "March", "November", "December"],
     categories: ["luxury", "family", "group"],
-    status: "Recommended",
-  },
-  {
-    title: "Vietnam",
-    subtitle: "Emerald Bays & Lantern-lit Towns",
-    image: "/images/dest2.jpg",
-    description:
-      "Cruise through emerald bays, wander lantern-lit towns, and let every meal feel like poetry—Vietnam is gentle, vibrant, and endlessly layered.",
-    months: ["March", "April", "October"],
-    categories: ["couple", "luxury", "cultural"],
-    status: "Trending🔥",
-  },
-  {
-    title: "Singapore",
-    subtitle: "A Garden in the Sky",
-    image: "/images/dest2.jpg",
-    description:
-      "A garden in the sky, a city of elegance. Singapore offers seamless design, curated indulgence, and the future wrapped in luxury.",
-    months: ["January", "July", "December"],
-    categories: ["luxury", "family", "city"],
-    status: "Recommended",
-  },
-  {
-    title: "Malaysia",
-    subtitle: "Contrasts of Culture & Calm",
-    image: "/images/dest2.jpg",
-    description:
-      "From rainforest retreats to cultural gold, Malaysia holds richness in its contrasts—quiet, bold, and full of soul.",
-    months: ["February", "May", "October"],
-    categories: ["luxury", "adventure", "nature"],
-    status: "Trending🔥",
-  },
-  {
-    title: "Kazakhstan",
-    subtitle: "Untouched Grandeur",
-    image: "/images/dest2.jpg",
-    description:
-      "Where modern cities rise from steppe lands and ancient silence fills the air—Kazakhstan is untouched grandeur with a modern twist.",
-    months: ["April", "May", "September"],
-    categories: ["adventure", "cultural", "luxury"],
-    status: "Recommended",
-  },
-  {
-    title: "Azerbaijan",
-    subtitle: "Where East Meets West",
-    image: "/images/dest2.jpg",
-    description:
-      "Mystical and modern, Baku’s flame-lit skyline stands beside silk-road stories—Azerbaijan is East, West, and everything in between.",
-    months: ["March", "October", "November"],
-    categories: ["luxury", "cultural", "city"],
-    status: "Trending🔥",
-  },
-  {
-    title: "Georgia",
-    subtitle: "Wine, Mountains & Warmth",
-    image: "/images/dest2.jpg",
-    description:
-      "Vineyards kissed by mountains, warm-hearted villages, and cuisine that comforts—Georgia is charm served with a toast.",
-    months: ["May", "September", "October"],
-    categories: ["luxury", "adventure", "cultural"],
-    status: "Recommended",
-  },
-  {
-    title: "Turkey",
-    subtitle: "Tapestry of Timeless Cultures",
-    image: "/images/dest2.jpg",
-    description:
-      "Istanbul’s skyline at dusk, Cappadocia’s sky at dawn—Turkey is a tapestry of cultures, textures, and timeless luxury.",
-    months: ["April", "May", "September"],
-    categories: ["luxury", "honeymoon", "cultural"],
-    status: "Trending🔥",
-  },
-  {
-    title: "Seychelles",
-    subtitle: "Intimate Island Escape",
-    image: "/images/dest2.jpg",
-    description:
-      "Pearl-white beaches, untouched islands, and the hush of exclusivity—Seychelles is nature’s most intimate secret.",
-    months: ["April", "May", "October"],
-    categories: ["honeymoon", "luxury", "nature"],
-    status: "Recommended",
-  },
-  {
-    title: "Bali",
-    subtitle: "Spiritual Luxury & Tranquility",
-    image: "/images/dest2.jpg",
-    description:
-      "Sacred temples, serene villas, and slow rituals of care—Bali is a pause button for the soul.",
-    months: ["March", "June", "September"],
-    categories: ["honeymoon", "luxury", "spiritual"],
     status: "Recommended",
   },
   {
     title: "Thailand",
     subtitle: "Where Indulgence Meets Spirit",
-    image: "/images/dest2.jpg",
+    image: "/home/l.jpg",
     description:
       "Golden temples, private islands, and food that tells a story—Thailand is where indulgence meets ancient spirit.",
-    months: ["January", "November", "December"],
+    months: ["January", "February", "August", "November"],
     categories: ["honeymoon", "luxury", "cultural"],
     status: "Recommended",
   },
   {
     title: "Sri Lanka",
     subtitle: "Wild, Wise & Wonderfully Private",
-    image: "/images/dest2.jpg",
+    image: "/home/j.jpg",
     description:
       "From tea plantations in the clouds to sun-kissed southern shores—Sri Lanka is wild, wise, and wonderfully private.",
-    months: ["February", "March", "August"],
+    months: ["January", "March", "December"],
     categories: ["adventure", "honeymoon", "luxury"],
+    status: "Recommended",
+  },
+  {
+    title: "Seychelles",
+    subtitle: "Intimate Island Escape",
+    image: "/home/s.jpg",
+    description:
+      "Pearl-white beaches, untouched islands, and the hush of exclusivity—Seychelles is nature’s most intimate secret.",
+    months: ["January", "May", "October", "December"],
+    categories: ["honeymoon", "luxury", "nature"],
+    status: "Recommended",
+  },
+  {
+    title: "Vietnam",
+    subtitle: "Emerald Bays & Lantern-lit Towns",
+    image: "/home/viet1.jpg",
+    description:
+      "Cruise through emerald bays, wander lantern-lit towns, and let every meal feel like poetry—Vietnam is gentle, vibrant, and endlessly layered.",
+    months: ["February", "March", "April", "September", "October"],
+    categories: ["couple", "luxury", "cultural"],
+    status: "Trending🔥",
+  },
+  {
+    title: "Singapore",
+    subtitle: "A Garden in the Sky",
+    image: "/home/g.jpg",
+    description:
+      "A garden in the sky, a city of elegance. Singapore offers seamless design, curated indulgence, and the future wrapped in luxury.",
+    months: ["February", "April", "July"],
+    categories: ["luxury", "family", "city"],
+    status: "Recommended",
+  },
+  {
+    title: "Malaysia",
+    subtitle: "Contrasts of Culture & Calm",
+    image: "/home/mal1.jpg",
+    description:
+      "From rainforest retreats to cultural gold, Malaysia holds richness in its contrasts—quiet, bold, and full of soul.",
+    months: ["March"],
+    categories: ["luxury", "adventure", "nature"],
+    status: "Trending🔥",
+  },
+  {
+    title: "Turkey",
+    subtitle: "Tapestry of Timeless Cultures",
+    image: "/home/m.jpg",
+    description:
+      "Istanbul’s skyline at dusk, Cappadocia’s sky at dawn—Turkey is a tapestry of cultures, textures, and timeless luxury.",
+    months: ["April", "June", "September", "October"],
+    categories: ["luxury", "honeymoon", "cultural"],
+    status: "Trending🔥",
+  },
+  {
+    title: "Georgia",
+    subtitle: "Wine, Mountains & Warmth",
+    image: "/home/n.jpg",
+    description:
+      "Vineyards kissed by mountains, warm-hearted villages, and cuisine that comforts—Georgia is charm served with a toast.",
+    months: ["April", "May", "September", "October"],
+    categories: ["luxury", "adventure", "cultural"],
+    status: "Recommended",
+  },
+  {
+    title: "Bali",
+    subtitle: "Spiritual Luxury & Tranquility",
+    image: "/home/c.jpg",
+    description:
+      "Sacred temples, serene villas, and slow rituals of care—Bali is a pause button for the soul.",
+    months: ["April", "May", "July", "August", "October"],
+    categories: ["honeymoon", "luxury", "spiritual"],
+    status: "Recommended",
+  },
+  {
+    title: "Mauritius",
+    subtitle: "Island Soul & Barefoot Luxury",
+    image: "/home/mau1.jpeg",
+    description:
+      "Lush volcanic peaks meet sapphire lagoons. Mauritius is where barefoot luxury dances with island soul.",
+    months: ["May", "November"],
+    categories: ["honeymoon", "family", "luxury"],
+    status: "Trending🔥",
+  },
+  {
+    title: "Kazakhstan",
+    subtitle: "Untouched Grandeur",
+    image: "home/kx.jpg",
+    description:
+      "Where modern cities rise from steppe lands and ancient silence fills the air—Kazakhstan is untouched grandeur with a modern twist.",
+    months: ["May", "September"],
+    categories: ["adventure", "cultural", "luxury"],
     status: "Recommended",
   },
   {
     title: "Switzerland",
     subtitle: "Alpine Calm & Elegance",
-    image: "/images/dest2.jpg",
+    image: "/home/sw.jpg",
     description:
       "Snow-dusted peaks, quiet lakeside villages, and alpine calm—Switzerland is elegance in every breath.",
-    months: ["June", "July", "December"],
+    months: ["June", "July", "August"],
     categories: ["luxury", "honeymoon", "nature"],
     status: "Recommended",
   },
   {
     title: "France",
     subtitle: "Romance, Refinement & Reverie",
-    image: "/images/dest2.jpg",
+    image: "/home/k.jpg",
     description:
       "Whether it’s Parisian perfume or Provencal air, France offers romance, refinement, and reverie—always effortlessly.",
-    months: ["April", "May", "September"],
+    months: ["June", "August", "September"],
     categories: ["luxury", "honeymoon", "cultural"],
     status: "Recommended",
   },
   {
     title: "Italy",
     subtitle: "Vineyards, Cliffs & Piazzas",
-    image: "/images/dest2.jpg",
+    image: "/home/d.jpg",
     description:
       "Tuscan vineyards, Amalfi cliffs, and timeless piazzas—Italy isn’t just seen, it’s felt.",
-    months: ["May", "June", "September"],
+    months: ["June", "July", "September"],
     categories: ["honeymoon", "luxury", "cultural"],
     status: "Recommended",
   },
   {
     title: "Greece",
     subtitle: "Mythology, Beauty & Summer Love",
-    image: "/images/dest2.jpg",
+    image: "/home/i.jpg",
     description:
       "Whitewashed dreams under Aegean skies—Greece is mythology, beauty, and slow summer love.",
-    months: ["June", "July", "September"],
+    months: ["June", "July", "August"],
     categories: ["honeymoon", "luxury", "island"],
     status: "Recommended",
   },
@@ -304,8 +294,9 @@ export default function Explore() {
           >
             <div className="relative">
               <img
-                src="/images/dest2.jpg"
+                src={item.image}
                 alt={item.title}
+                loading="async"
                 className="w-full h-36 sm:h-44 md:h-52 xl:h-60 2xl:h-72 object-cover"
               />
 
@@ -353,6 +344,7 @@ export default function Explore() {
             <img
               src={selected.image}
               alt={selected.title}
+               loading="async"
               className="w-full h-48 sm:h-64 object-cover"
             />
             <div className="p-5">

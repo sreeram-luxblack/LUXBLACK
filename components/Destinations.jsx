@@ -6,7 +6,7 @@ const destinations = [
   {
     title: "Maldives",
     subtitle: "Private Islands & Ocean Dreams",
-    image: "/images/dest2.jpg",
+    image: "/home/mal1.jpg",
     description:
       "Private overwater villas, champagne sunsets, and the quiet rhythm of the ocean—it’s where time slows and the sea speaks in soft whispers.",
     points: [
@@ -18,7 +18,7 @@ const destinations = [
   {
     title: "Mauritius",
     subtitle: "Tropical Bliss & Island Culture",
-    image: "/images/dest2.jpg",
+    image: "/home/mau1.jpeg",
     description:
       "Lush volcanic peaks meet sapphire lagoons. Mauritius is where barefoot luxury dances with island soul.",
     points: [
@@ -30,7 +30,7 @@ const destinations = [
   {
     title: "Dubai",
     subtitle: "Desert Glamour & Sky High",
-    image: "/images/dest2.jpg",
+    image: "/home/dub2.jpg",
     description:
       " Golden dunes by day, glittering skyline by night—Dubai is a world built on wonder, indulgence, and imagination.",
     points: [
@@ -42,7 +42,7 @@ const destinations = [
   {
     title: "Vietnam",
     subtitle: "Heritage Trails & Hidden Bays",
-    image: "/images/dest2.jpg",
+    image: "/home/viet1.jpg",
     description:
       "Cruise through emerald bays, wander lantern-lit towns, and let every meal feel like poetry—Vietnam is gentle, vibrant, and endlessly layered.",
     points: [

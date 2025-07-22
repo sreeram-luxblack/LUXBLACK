@@ -6,46 +6,42 @@ import Image from "next/image";
 const categories = [
   {
     title: "Honeymoons",
-    image: "/images/group.jpg",
+    image: "/home/honeymoon 2.jpg",
     countries: [
-      { name: "Bali", image: "/images/country.jpg" },
-      { name: "Maldives", image: "/images/country.jpg" },
-      { name: "Venice", image: "/images/country.jpg" },
-      { name: "Kyoto", image: "/images/country.jpg" },
-      { name: "Santorini", image: "/images/country.jpg" },
+      { name: "Maldives", image: "/home/c.jpg" },
+      { name: "Mauritius", image: "/home/mau1.jpeg" },
+      { name: "Bali", image: "/home/e.jpg" },
+      { name: "Thailand", image: "/home/l.jpg" },
     ],
   },
   {
     title: "Family",
-    image: "/images/group.jpg",
+    image: "/home/family 2.jpg",
     countries: [
-      { name: "Italy", image: "/images/country.jpg" },
-      { name: "France", image: "/images/country.jpg" },
-      { name: "Greece", image: "/images/country.jpg" },
-      { name: "Japan", image: "/images/country.jpg" },
-      { name: "Spain", image: "/images/country.jpg" },
+      { name: "Singapore", image: "/home/a.jpg" },
+      { name: "Dubai", image: "/home/dub2.jpg" },
+      { name: "Malaysia", image: "/home/mal1.jpg" },
+      { name: "Sri Lanka", image: "/home/j.jpg" },
     ],
   },
   {
     title: "Couples",
-    image: "/images/group.jpg",
+    image: "/home/couples.jpg",
     countries: [
-      { name: "Bali", image: "/images/country.jpg" },
-      { name: "Maldives", image: "/images/country.jpg" },
-      { name: "Venice", image: "/images/country.jpg" },
-      { name: "Kyoto", image: "/images/country.jpg" },
-      { name: "Santorini", image: "/images/country.jpg" },
+      { name: "Vietnam", image: "/home/h.jpg" },
+      { name: "Georgia", image: "/home/n.jpg" },
+      { name: "Turkey", image: "/home/m.jpg" },
+      { name: "Maldives", image: "/home/mal1.jpg" },
     ],
   },
   {
     title: "Groups",
-    image: "/images/group.jpg",
+    image: "/home/groups.jpg",
     countries: [
-      { name: "Bali", image: "/images/country.jpg" },
-      { name: "Maldives", image: "/images/country.jpg" },
-      { name: "Venice", image: "/images/country.jpg" },
-      { name: "Kyoto", image: "/images/country.jpg" },
-      { name: "Santorini", image: "/images/country.jpg" },
+      { name: "Thailand", image: "/home/l.jpg" },
+      { name: "Vietnam", image: "/home/h.jpg" },
+      { name: "Europe", image: "/home/k.jpg" },
+      { name: "Dubai", image: "/home/dub1.jpg" },
     ],
   },
 ];
@@ -56,7 +52,9 @@ export default function Groups() {
   return (
     <section className="bg-[#F8F5F0] py-[50px] md:py-[70px] px-4">
       <h2 className="text-center text-[30px] md:text-[48px] font-semibold text-[#2C2C2C] mb-10  ">
-       <span className=""> Select Your  </span><br className="block sm:hidden text-[40px] md:text-[48px]"></br>Bespoke Journey
+        <span className=""> Select Your </span>
+        <br className="block sm:hidden text-[40px] md:text-[48px]"></br>Bespoke
+        Journey
       </h2>
 
       <div className="flex flex-wrap justify-center gap-6 max-w-7xl mx-auto">

@@ -7,42 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const dynamicCategories = [
-  {
-    title: "Maldives",
-    bgImage: "/images/acc5.jpg",
-    cards: [
-      {
-        title: "LuxBlack Editions – Ultra Luxury",
-        description: "",
-        bullets: [
-          "Private island buyouts (e.g., Velaa Private Island, Cheval Blanc Randheli) with private jet transfers.",
-          "Underwater fine dining with live orchestral music.",
-          "Private yacht charters, butler villas, and curated reef diving.",
-        ],
-        images: ["/images/dest1.jpg", "/images/dest2.jpg", "/images/dest3.jpg"],
-      },
-      {
-        title: "LuxBlack Signature Collections – Mid Luxury",
-        description: "",
-        bullets: [
-          "Overwater villas at Baros, Anantara Kihavah, or Taj Exotica.",
-          "Sunset cruises, spa rituals, and underwater wine pairings.",
-          "Floating breakfasts and private beach cinema nights.",
-        ],
-        images: ["/images/dest1.jpg", "/images/dest2.jpg", "/images/dest3.jpg"],
-      },
-      {
-        title: "LuxBlack One Collections – Everyday Luxury",
-        description: "",
-        bullets: [
-          "Ocean view villas at VARU, Cocoon, or Sun Siyam Olhuveli.",
-          "Speedboat transfers and semi-private excursions.",
-          "Candle-lit beach dinners and reef snorkeling tours.",
-        ],
-        images: ["/images/dest1.jpg", "/images/dest2.jpg", "/images/dest3.jpg"],
-      },
-    ],
-  },
+ 
   {
     title: "Mauritius",
     bgImage: "/images/acc5.jpg",
@@ -55,7 +20,7 @@ const dynamicCategories = [
           "Yacht sailing and private island picnics.",
           "Personal shopping, spa journeys, and exclusive golf access.",
         ],
-        images: ["/images/dest1.jpg", "/images/dest2.jpg", "/images/dest3.jpg"],
+        images: ["/Mauritius/everyday/1.jpeg"],
       },
       {
         title: "LuxBlack Signature Collections – Mid Luxury",
@@ -65,7 +30,7 @@ const dynamicCategories = [
           "Island hopping, underwater scooter rides.",
           "Rum tasting and cultural immersions.",
         ],
-        images: ["/images/dest1.jpg", "/images/dest2.jpg", "/images/dest3.jpg"],
+        images: ["/Mauritius/mid/1.jpeg"],
       },
       {
         title: "LuxBlack One Collections – Everyday Luxury",
@@ -75,10 +40,11 @@ const dynamicCategories = [
           "Group excursions to Île aux Cerfs.",
           "Wellness sessions and scenic bike rides.",
         ],
-        images: ["/images/dest1.jpg", "/images/dest2.jpg", "/images/dest3.jpg"],
+        images: ["/Mauritius/ultra/1.jpeg"],
       },
     ],
   },
+  
   {
     title: "Dubai",
     bgImage: "/images/acc5.jpg",
@@ -91,7 +57,7 @@ const dynamicCategories = [
           "Private yacht parties, helicopter desert rides.",
           "Michelin dining with celebrity chefs.",
         ],
-        images: ["/images/dest1.jpg", "/images/dest2.jpg", "/images/dest3.jpg"],
+        images: ["/Dubai/everyday/1.jpg"],
       },
       {
         title: "LuxBlack Signature Collections – Mid Luxury",
@@ -101,7 +67,7 @@ const dynamicCategories = [
           "Desert safari in Range Rover, gold souk shopping.",
           "Rooftop fine dining and private Burj Khalifa access.",
         ],
-        images: ["/images/dest1.jpg", "/images/dest2.jpg", "/images/dest3.jpg"],
+        images: ["/Dubai/mid/1.jpg"],
       },
       {
         title: "LuxBlack One Collections – Everyday Luxury",
@@ -111,7 +77,7 @@ const dynamicCategories = [
           "Dhow dinner cruise, Miracle Garden tours.",
           "Premium desert camp experience.",
         ],
-        images: ["/images/dest1.jpg", "/images/dest2.jpg", "/images/dest3.jpg"],
+        images: ["/Dubai/ultra/1.jpg"],
       },
     ],
   },
@@ -127,7 +93,7 @@ const dynamicCategories = [
           "Stay at Amanoi or Six Senses Con Dao with wellness concierge.",
           "Helicopter transfers to ancient sites, Michelin dining.",
         ],
-        images: ["/images/dest1.jpg", "/images/dest2.jpg", "/images/dest3.jpg"],
+        images: ["/Vietnam/everyday/1.jpg"],
       },
       {
         title: "LuxBlack Signature Collections – Mid Luxury",
@@ -137,7 +103,7 @@ const dynamicCategories = [
           "Vespa street food tours, organic cooking classes.",
           "Scenic luxury train journeys.",
         ],
-        images: ["/images/dest1.jpg", "/images/dest2.jpg", "/images/dest3.jpg"],
+        images: ["/Vietnam/mid/1.jpg"],
       },
       {
         title: "LuxBlack One Collections – Everyday Luxury",
@@ -147,7 +113,43 @@ const dynamicCategories = [
           "Group Ha Long Bay cruise, cultural city tours.",
           "Coffee tastings and wellness massages.",
         ],
-        images: ["/images/dest1.jpg", "/images/dest2.jpg", "/images/dest3.jpg"],
+        images: ["/Vietnam/ultra/1.jpg"],
+      },
+    ],
+  },
+   {
+    title: "Maldives",
+    bgImage: "/images/acc5.jpg",
+    cards: [
+      {
+        title: "LuxBlack Editions – Ultra Luxury",
+        description: "",
+        bullets: [
+          "Private island buyouts (e.g., Velaa Private Island, Cheval Blanc Randheli) with private jet transfers.",
+          "Underwater fine dining with live orchestral music.",
+          "Private yacht charters, butler villas, and curated reef diving.",
+        ],
+        images: ["/Maldives/everyday/1.jpeg"],
+      },
+      {
+        title: "LuxBlack Signature Collections – Mid Luxury",
+        description: "",
+        bullets: [
+          "Overwater villas at Baros, Anantara Kihavah, or Taj Exotica.",
+          "Sunset cruises, spa rituals, and underwater wine pairings.",
+          "Floating breakfasts and private beach cinema nights.",
+        ],
+        images: ["/Maldives/mid/1.jpeg"],
+      },
+      {
+        title: "LuxBlack One Collections – Everyday Luxury",
+        description: "",
+        bullets: [
+          "Ocean view villas at VARU, Cocoon, or Sun Siyam Olhuveli.",
+          "Speedboat transfers and semi-private excursions.",
+          "Candle-lit beach dinners and reef snorkeling tours.",
+        ],
+        images: ["/Maldives/ultra/1.jpeg"],
       },
     ],
   },
@@ -168,9 +170,8 @@ function Card({
     </div>
   );
 }
-
 function ImageSlider({ images }: { images: string[] }) {
-  const [index, setIndex] = useState(0);
+    const [index, setIndex] = useState(0);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -180,26 +181,49 @@ function ImageSlider({ images }: { images: string[] }) {
   }, [images]);
 
   return (
-    <div className="relative w-full aspect-square overflow-hidden">
+    <div className="relative w-full h-96 bg-white overflow-hidden">
       <Image
         src={images[index]}
-        alt={`Destination ${index + 1}`}
+        alt="Destination"
         fill
-        className="object-cover transition-all duration-500"
+        className="object-cover"
+        sizes="100vw"
       />
-      <div className="absolute inset-x-0 bottom-2 flex justify-center gap-2">
-        {images.map((_, i) => (
-          <div
-            key={i}
-            className={`w-2 h-2 rounded-full ${
-              i === index ? "bg-white" : "bg-white/50"
-            }`}
-          />
-        ))}
-      </div>
     </div>
   );
 }
+
+// function ImageSlider({ images }: { images: string[] }) {
+//   const [index, setIndex] = useState(0);
+
+//   useEffect(() => {
+//     const timer = setInterval(() => {
+//       setIndex((prev) => (prev + 1) % images.length);
+//     }, 3000);
+//     return () => clearInterval(timer);
+//   }, [images]);
+
+//   return (
+//     <div className="relative w-full aspect-square overflow-hidden">
+//       <Image
+//         src={images[index]}
+//         alt={`Destination ${index + 1}`}
+//         fill
+//         className="object-cover transition-all duration-500 "
+//       />
+//       <div className="absolute inset-x-0 bottom-2 flex justify-center gap-2">
+//         {images.map((_, i) => (
+//           <div
+//             key={i}
+//             className={`w-2 h-2 rounded-full  ${
+//               i === index ? "bg-white" : "bg-white/50"
+//             }`}
+//           />
+//         ))}
+//       </div>
+//     </div>
+//   );
+// }
 
 export default function Country() {
   const [openItem, setOpenItem] = useState<string | null>(null);
