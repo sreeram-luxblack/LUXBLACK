@@ -77,8 +77,10 @@ export default function Groups() {
                   fill
                   className="object-cover"
                 />
-                <div className="absolute bottom-[20%] left-0 right-0 text-center text-white text-lg font-semibold tracking-wide py-1 font-subheading">
-                  {cat.title}
+                <div className="absolute bottom-[20%] left-0 right-0 flex justify-center">
+                  <div className="bg-gradient-to-t from-white/70 to-white/50 px-4 py-2 rounded-md shadow-lg text-black text-lg font-semibold tracking-wide font-subheading">
+                    {cat.title}
+                  </div>
                 </div>
               </div>
 
