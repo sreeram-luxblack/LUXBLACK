@@ -7,7 +7,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 const dynamicCategories = [
- 
   {
     title: "Mauritius",
     bgImage: "/images/acc5.jpg",
@@ -44,7 +43,7 @@ const dynamicCategories = [
       },
     ],
   },
-  
+
   {
     title: "Dubai",
     bgImage: "/images/acc5.jpg",
@@ -93,7 +92,7 @@ const dynamicCategories = [
           "Stay at Amanoi or Six Senses Con Dao with wellness concierge.",
           "Helicopter transfers to ancient sites, Michelin dining.",
         ],
-        images: ["/Vietnam/everyday/1.jpg"],
+        images: ["/Vietnam/ultra/1.jpg"],
       },
       {
         title: "LuxBlack Signature Collections – Mid Luxury",
@@ -113,11 +112,11 @@ const dynamicCategories = [
           "Group Ha Long Bay cruise, cultural city tours.",
           "Coffee tastings and wellness massages.",
         ],
-        images: ["/Vietnam/ultra/1.jpg"],
+        images: ["/Vietnam/everyday/1.jpg"],
       },
     ],
   },
-   {
+  {
     title: "Maldives",
     bgImage: "/images/acc5.jpg",
     cards: [
@@ -139,7 +138,7 @@ const dynamicCategories = [
           "Sunset cruises, spa rituals, and underwater wine pairings.",
           "Floating breakfasts and private beach cinema nights.",
         ],
-        images: ["/Maldives/mid/1.jpeg"],
+        images: ["/Maldives/everyday/1.jpeg"],
       },
       {
         title: "LuxBlack One Collections – Everyday Luxury",
@@ -149,7 +148,7 @@ const dynamicCategories = [
           "Speedboat transfers and semi-private excursions.",
           "Candle-lit beach dinners and reef snorkeling tours.",
         ],
-        images: ["/Maldives/ultra/1.jpeg"],
+        images: ["/Maldives/mid/1.jpeg"],
       },
     ],
   },
@@ -171,7 +170,7 @@ function Card({
   );
 }
 function ImageSlider({ images }: { images: string[] }) {
-    const [index, setIndex] = useState(0);
+  const [index, setIndex] = useState(0);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -187,6 +186,7 @@ function ImageSlider({ images }: { images: string[] }) {
         alt="Destination"
         fill
         className="object-cover"
+        loading="lazy"
         sizes="100vw"
       />
     </div>
@@ -235,9 +235,9 @@ export default function Country() {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage: "url('/images/servicehero.jpg')",
-          filter: "blur(8px)",
+          filter: "blur(20px)",
           transform: "scale(1.1)", // prevents edge blur gaps
-          opacity: "60%",
+          opacity: "20%",
         }}
       ></div>
       <h2 className="text-center relative z-10 text-[24px] md:text-[48px] font-semibold  text-[#292015] mb-10 ">
@@ -352,9 +352,9 @@ export default function Country() {
                       ))}
                     </ul>
                     <Link href={"/contact"}>
-                    <button className="mt-4 self-start cursor-pointer bg-[#C9B87A] text-white px-4 py-1.5 rounded-lg hover:bg-[#bda865] transition-colors shadow-md text-sm">
-                      Enquire Now
-                    </button>
+                      <button className="mt-4 self-start cursor-pointer bg-[#C9B87A] text-white px-4 py-1.5 rounded-lg hover:bg-[#bda865] transition-colors shadow-md text-sm">
+                        Enquire Now
+                      </button>
                     </Link>
                   </div>
                 </Card>

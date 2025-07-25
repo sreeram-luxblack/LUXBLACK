@@ -67,7 +67,7 @@ const countries = [
   {
     title: "Singapore",
     subtitle: "A Garden in the Sky",
-    image: "/home/g.jpg",
+    image: "/home/singa.jpg",
     description:
       "A garden in the sky, a city of elegance. Singapore offers seamless design, curated indulgence, and the future wrapped in luxury.",
     months: ["February", "April", "July"],
@@ -77,7 +77,7 @@ const countries = [
   {
     title: "Malaysia",
     subtitle: "Contrasts of Culture & Calm",
-    image: "/home/mal1.jpg",
+    image: "/home/malis.jpg",
     description:
       "From rainforest retreats to cultural gold, Malaysia holds richness in its contrasts—quiet, bold, and full of soul.",
     months: ["March"],
@@ -107,7 +107,7 @@ const countries = [
   {
     title: "Bali",
     subtitle: "Spiritual Luxury & Tranquility",
-    image: "/home/c.jpg",
+    image: "/home/e.jpg",
     description:
       "Sacred temples, serene villas, and slow rituals of care—Bali is a pause button for the soul.",
     months: ["April", "May", "July", "August", "October"],
@@ -157,7 +157,7 @@ const countries = [
   {
     title: "Italy",
     subtitle: "Vineyards, Cliffs & Piazzas",
-    image: "/home/d.jpg",
+    image: "/home/itley.jpg",
     description:
       "Tuscan vineyards, Amalfi cliffs, and timeless piazzas—Italy isn’t just seen, it’s felt.",
     months: ["June", "July", "September"],
@@ -167,7 +167,7 @@ const countries = [
   {
     title: "Greece",
     subtitle: "Mythology, Beauty & Summer Love",
-    image: "/home/i.jpg",
+    image: "/home/grees.jpg",
     description:
       "Whitewashed dreams under Aegean skies—Greece is mythology, beauty, and slow summer love.",
     months: ["June", "July", "August"],
@@ -296,7 +296,7 @@ export default function Explore() {
               <img
                 src={item.image}
                 alt={item.title}
-                loading="async"
+                loading="lazy"
                 className="w-full h-36 sm:h-44 md:h-52 xl:h-60 2xl:h-72 object-cover"
               />
 
@@ -344,7 +344,7 @@ export default function Explore() {
             <img
               src={selected.image}
               alt={selected.title}
-               loading="async"
+              loading="lazy"
               className="w-full h-48 sm:h-64 object-cover"
             />
             <div className="p-5">

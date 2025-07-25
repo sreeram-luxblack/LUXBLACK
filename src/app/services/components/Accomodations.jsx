@@ -8,23 +8,18 @@ import Link from "next/link";
 
 export default function Accomodation() {
   const stayImages = [
-    "/images/a.jpg",
-    "/images/b.jpg",
-    "/images/a.jpg",
-    "/images/b.jpg",
-    "/images/a.jpg",
-    "/images/b.jpg",
-    "/images/a.jpg",
+    "/Stays/1 (1).jpg",
+    "/Stays/1 (2).jpg",
+    "/Stays/1 (3).jpg",
+    "/Stays/1 (4).jpg",
+ 
   ];
 
   const transportImages = [
-    "/images/b.jpg",
-    "/images/a.jpg",
-    "/images/b.jpg",
-    "/images/a.jpg",
-    "/images/b.jpg",
-    "/images/a.jpg",
-    "/images/b.jpg",
+   "/Transports/1 (1).jpg",
+    "/Transports/1 (2).jpg",
+    "/Transports/1 (3).jpg",
+    "/Transports/1 (4).jpg",
   ];
   const natureImages = [
     "/images/b.jpg",
@@ -154,7 +149,7 @@ export default function Accomodation() {
         </div>
 
         {/* Sites */}
-        <div className="space-y-6">
+        {/* <div className="space-y-6">
           <h3 className="text-2xl sm:text-3xl font-playfair text-[#cbb45f] text-center">
             From Our Journal
           </h3>
@@ -176,14 +171,14 @@ export default function Accomodation() {
             {blogs.map((blog, i) => (
               <SwiperSlide key={i}>
                 <div className="bg-[#ffffff79] h-[300px] rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                  {/* <div className="relative w-full h-[220px]">
+                  <div className="relative w-full h-[220px]">
                     <Image
                       src={blog.image}
                       alt={blog.title}
                       fill
                       className="object-cover"
                     />
-                  </div> */}
+                  </div>
                   <div className="p-5 space-y-3">
                     <h4 className="text-lg font-semibold text-[#2C2C2C] font-playfair">
                       {blog.title}
@@ -202,7 +197,7 @@ export default function Accomodation() {
               </SwiperSlide>
             ))}
           </Swiper>
-        </div>
+        </div> */}
       </div>
      <style jsx global>{`
   .swiper-button-next,

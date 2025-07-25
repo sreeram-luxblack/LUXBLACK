@@ -23,7 +23,7 @@ export default function AboutUsSection() {
   return (
     <section className="bg-[#F8F5F0] py-20 px-6 sm:px-10 text-center">
       <div className="max-w-4xl mx-auto space-y-5 mb-14">
-        <h2 className="text-2xl sm:text-3xl font-playfair text-[#2C2C2C]">
+        <h2 className="text-2xl sm:text-3xl font-serif text-[#352a1c]">
          Designed for ease, comfort and meaning
         </h2>
         <p className="text-[#2C2C2C] text-base font-inter">

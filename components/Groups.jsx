@@ -18,9 +18,9 @@ const categories = [
     title: "Family",
     image: "/home/family 2.jpg",
     countries: [
-      { name: "Singapore", image: "/home/a.jpg" },
+      { name: "Singapore", image: "/home/singa.jpg" },
       { name: "Dubai", image: "/home/dub2.jpg" },
-      { name: "Malaysia", image: "/home/mal1.jpg" },
+      { name: "Malaysia", image: "/home/malis.jpg" },
       { name: "Sri Lanka", image: "/home/j.jpg" },
     ],
   },
@@ -28,7 +28,7 @@ const categories = [
     title: "Couples",
     image: "/home/couples.jpg",
     countries: [
-      { name: "Vietnam", image: "/home/h.jpg" },
+      { name: "Vietnam", image: "/home/viet.jpg" },
       { name: "Georgia", image: "/home/n.jpg" },
       { name: "Turkey", image: "/home/m.jpg" },
       { name: "Maldives", image: "/home/mal1.jpg" },
@@ -39,8 +39,8 @@ const categories = [
     image: "/home/groups.jpg",
     countries: [
       { name: "Thailand", image: "/home/l.jpg" },
-      { name: "Vietnam", image: "/home/h.jpg" },
-      { name: "Europe", image: "/home/k.jpg" },
+      { name: "Vietnam", image: "/home/viet.jpg" },
+      { name: "Europe", image: "/home/sw.jpg" },
       { name: "Dubai", image: "/home/dub1.jpg" },
     ],
   },
@@ -51,7 +51,7 @@ export default function Groups() {
 
   return (
     <section className="bg-[#F8F5F0] py-[50px] md:py-[70px] px-4">
-      <h2 className="text-center text-[30px] md:text-[48px] font-semibold text-[#2C2C2C] mb-10  ">
+      <h2 className="text-center text-[30px] md:text-[48px] font-semibold font-serif text-[#352a1c] mb-10  ">
         <span className=""> Select Your </span>
         <br className="block sm:hidden text-[40px] md:text-[48px]"></br>Bespoke
         Journey
@@ -61,7 +61,7 @@ export default function Groups() {
         {categories.map((cat, idx) => (
           <div
             key={idx}
-            className="group [perspective:1000px] h-[300px] sm:h-[500px] 2xl:h-[550px] w-full sm:w-[240px] md:w-[250px] cursor-pointer"
+            className="group border-1 border-[#2c2c2c71] rounded-lg [perspective:1000px] h-[300px] sm:h-[500px] 2xl:h-[550px] w-full sm:w-[240px] md:w-[250px] cursor-pointer"
             onClick={() => setFlippedIndex(flippedIndex === idx ? null : idx)}
           >
             <div

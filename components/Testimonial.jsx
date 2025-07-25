@@ -8,26 +8,26 @@ import "swiper/css/navigation";
 
 const testimonials = [
   {
-    name: "Neha & Karan A.",
-    title: "Honeymooners",
+    name: "Binit Poddar.",
+    title: "Treasury Head - PhonePe",
     message:
       "Everything was taken care of without us having to ask. From the private dinners to the surprise upgrades, it was beyond what we imagined.",
   },
   {
-    name: "Rhea D.",
-    title: "Family Traveller",
+    name: "Mithun Appaiah.",
+    title: "Chief Executive Officer - Wow Momos",
     message:
       "Our trip felt effortless. Every element was considered — we could just live in the moment while everything unfolded perfectly.",
   },
   {
-    name: "Aarav S.",
-    title: "Tech Entrepreneur",
+    name: "Singh S.",
+    title: "Vice president of Swiss Re",
     message:
       "From start to finish, the service was seamless. The team operated with quiet precision — exactly how true travel should feel.",
   },
   {
-    name: "Meera K.",
-    title: "International Legal Advisor",
+    name: "Venkatesh K.",
+    title: "Redington India Ltd",
     message:
       "They curated our journey with taste, restraint, and insight. Nothing was overdone — just beautifully balanced, from start to finish.",
   },
@@ -38,7 +38,7 @@ export default function Testimonial() {
   return (
     <section className="bg-white text-[#0C0C0C] py-16 px-4">
       <div className="max-w-6xl mx-auto text-center space-y-10">
-        <h2 className="text-4xl md:text-5xl font-playfair text-[#C9B87A]">
+        <h2 className="text-4xl md:text-5xl font-semibold font-serif text-[#352a1c]">
           What Our Clients Say
         </h2>
 
@@ -62,11 +62,11 @@ export default function Testimonial() {
                   “{testimonial.message}”
                 </p>
                 <div className="flex items-center gap-4 mt-auto">
-                  <div className="w-12 h-12 rounded-full bg-[#C9B87A] flex items-center justify-center">
+                  {/* <div className="w-12 h-12 rounded-full bg-[#C9B87A] flex items-center justify-center">
                     <User size={24} color="#0C0C0C" />
-                  </div>
+                  </div> */}
                   <div className="text-left">
-                    <p className="font-semibold text-[#C9B87A]">
+                    <p className="font-semibold font-playfair text-[#C9B87A]">
                       {testimonial.name}
                     </p>
                     <p className="text-sm text-[#2C2C2C]">

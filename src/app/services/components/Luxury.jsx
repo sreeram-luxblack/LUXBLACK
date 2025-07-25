@@ -13,7 +13,7 @@ export default function Luxury() {
         "Curated cultural moments — sunset boat rides, artisan food walks, local guided tours",
         "Streamlined service with a personal touch, ensuring ease throughout your journey",
       ],
-      image: "/images/luxury1.jpg", // Replace with relevant image
+      image: "/home/one.jpg", // Replace with relevant image
     },
     {
       title: "LUXBLACK SIGNATURE COLLECTIONS",
@@ -24,7 +24,7 @@ export default function Luxury() {
         "Signature experiences — heritage safaris, private yacht excursions, curated spa journeys",
         "Dedicated travel curator, offering seamless planning and concierge support pre-to-post trip",
       ],
-      image: "/images/luxury1.jpg", // Replace with relevant image
+      image: "/home/sig.jpg", // Replace with relevant image
     },
     {
       title: "LUXBLACK EDITIONS",
@@ -35,7 +35,7 @@ export default function Luxury() {
         "Exclusive experiences — chef-hosted dinners, fashion week access, exclusive destinations explorations",
         "White-glove end-to-end service, including 24/7 concierge, VIP immigration handling, and personal hosts",
       ],
-      image: "/images/luxury1.jpg", // Replace with relevant image
+      image: "/home/edi.jpg", // Replace with relevant image
     },
   ];
 

@@ -6,12 +6,12 @@ export default function Hero() {
     <section className="relative w-full h-[75vh] overflow-hidden">
       {/* Background Image */}
       <Image
-        src="/images/servicehero.jpg" // Replace with your image path
+        src="/images/heroservice.jpg" // Replace with your image path
         alt="Luxurious contact background"
         layout="fill"
         objectFit="cover"
         priority
-        className="brightness-[0.55]"
+        className="brightness-[0.55] blur-[4px]"
       />
 
       {/* Overlay Text */}

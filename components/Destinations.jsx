@@ -57,8 +57,8 @@ export default function Destinations() {
   const [selected, setSelected] = useState(null);
 
   return (
-    <div className="p-6 sm:p-10 bg-[#f8f5f0] min-h-screen text-[#4c3c28] font-sans">
-      <h1 className="text-3xl sm:text-5xl font-bold text-center mb-10 lg:mb-16 tracking-wide font-serif">
+    <div className="p-6 sm:p-10 bg-[#f8f5f0] min-h-screen text-[#352a1c] font-sans">
+      <h1 className="text-3xl sm:text-5xl font-bold text-center mb-10 lg:mb-16 tracking-wide  font-serif">
         LuxBlack Signatures
       </h1>
 
@@ -75,7 +75,7 @@ export default function Destinations() {
               className="w-full h-48 sm:h-56 object-cover"
             />
             <div className="p-4 sm:p-5">
-              <h2 className="text-lg sm:text-2xl font-semibold mb-1">
+              <h2 className="text-lg sm:text-2xl font-semibold  mb-1">
                 {item.title}
               </h2>
               <p className="text-sm text-gray-600">{item.subtitle}</p>
@@ -105,7 +105,7 @@ export default function Destinations() {
 
             {/* Content */}
             <div className="p-5 sm:p-6">
-              <h2 className="text-xl sm:text-3xl font-bold mb-3">
+              <h2 className="text-xl sm:text-3xl font-bold mb-3 font-playfair">
                 {selected.title}
               </h2>
               <p className="mb-4 text-gray-700 leading-relaxed text-sm sm:text-base">
