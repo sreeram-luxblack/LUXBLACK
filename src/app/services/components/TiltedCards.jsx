@@ -15,6 +15,7 @@ export default function TiltedCards() {
               width={600}
               height={400}
               className="w-full h-auto object-cover"
+              
             />
           </div>
           <div className="md:w-1/2 text-gray-800 text-lg leading-relaxed font-libre">
