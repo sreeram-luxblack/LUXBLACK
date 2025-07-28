@@ -31,7 +31,7 @@ export default function Experience() {
   return (
     <section className="bg-[#F8F5F0] py-16 px-6 sm:px-10">
       <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-2xl sm:text-3xl font-semibold font-serif text-[#352a1c] mb-10 uppercase">
+        <h2 className="text-2xl sm:text-3xl font-semibold font-playfair tracking-wide text-[#2C2C2C] mb-10 uppercase">
           Experiences
         </h2>
 

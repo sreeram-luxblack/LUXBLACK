@@ -240,7 +240,7 @@ export default function Country() {
           opacity: "20%",
         }}
       ></div>
-      <h2 className="text-center relative z-10 text-[24px] md:text-[48px] font-semibold  text-[#292015] mb-10 ">
+      <h2 className="text-center relative z-10 text-[24px] md:text-[48px] font-medium  font-playfair tracking-wide text-[#2C2C2C] mb-10 ">
         Select your escape
       </h2>
       <RadixAccordion.Root
@@ -304,7 +304,7 @@ export default function Country() {
               </RadixAccordion.Trigger> */}
 
               <RadixAccordion.Trigger className="w-full flex justify-between items-center px-6 py-4 text-lg sm:text-xl font-semibold text-[#000000] bg-[#fff0] border border-[#000000] rounded-xl shadow-sm hover:shadow-md hover:bg-[#fffefc8a] transition-all duration-300">
-                <span className="font-heading tracking-wide">
+                <span className="font-heading   tracking-wide text-[#2C2C2C]">
                   {category.title}
                 </span>
                 <span

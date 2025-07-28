@@ -58,7 +58,7 @@ export default function Destinations() {
 
   return (
     <div className="p-6 sm:p-10 bg-[#f8f5f0] min-h-screen text-[#352a1c] font-sans">
-      <h1 className="text-3xl sm:text-5xl font-bold text-center mb-10 lg:mb-16 tracking-wide  font-serif">
+      <h1 className="text-3xl sm:text-5xl font-medium text-center mb-10 lg:mb-16 font-playfair tracking-wide text-[#2C2C2C]">
         LuxBlack Signatures
       </h1>
 

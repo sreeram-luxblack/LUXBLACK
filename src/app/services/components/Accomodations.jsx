@@ -59,7 +59,7 @@ export default function Accomodation() {
       <div className="max-w-6xl mx-auto space-y-10 md:space-y-20">
         {/* Main Heading */}
         <div className="text-center">
-          <h2 className="text-[32px] md:text-5xl font-playfair text-[#cbb45f] mb-8 ">
+          <h2 className="text-[32px] md:text-5xl font-medium font-playfair tracking-wide text-[#cbb45f] mb-8 ">
             A World of Experiences, <br className="block md:hidden"></br>{" "}
             Tailored for You
           </h2>
@@ -71,7 +71,7 @@ export default function Accomodation() {
 
         {/* Stays & Accommodations */}
         <div className="space-y-6">
-          <h3 className="text-2xl sm:text-3xl font-playfair text-[#cbb45f] text-center">
+          <h3 className="text-2xl sm:text-3xl font-medium font-playfair tracking-wide text-[#cbb45f] text-center">
             Stays & Accommodations
           </h3>
 
@@ -111,7 +111,7 @@ export default function Accomodation() {
 
         {/* Transport */}
         <div className="space-y-6">
-          <h3 className="text-2xl sm:text-3xl font-playfair text-[#cbb45f] text-center">
+          <h3 className="text-2xl sm:text-3xl font-medium font-playfair tracking-wide text-[#cbb45f] text-center">
             Transport
           </h3>
 
@@ -143,7 +143,7 @@ export default function Accomodation() {
             ))}
           </Swiper>
 
-          <p className="text-center max-w-2xl mx-auto text-sm sm:text-base">
+          <p className="text-center max-w-2xl mx-auto  text-sm sm:text-base">
             Arrive in style—be it by sea, sky, or the stories in between.
           </p>
         </div>

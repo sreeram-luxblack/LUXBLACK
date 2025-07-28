@@ -16,7 +16,7 @@ export default function Hero() {
 
       {/* Overlay Text */}
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4 sm:px-8">
-        <h1 className="text-4xl sm:text-6xl  text-[#F8F5F0] drop-shadow-lg tracking-wide">
+        <h1 className="text-4xl sm:text-6xl  text-[#F8F5F0] drop-shadow-lg font-medium font-playfair tracking-wide ">
          Destinations, Reimagined for You
         </h1>
         <p className="mt-8 text-lg sm:text-xl max-w-2xl text-[#ffffff] font-libre drop-shadow-md">

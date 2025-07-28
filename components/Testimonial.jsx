@@ -38,7 +38,7 @@ export default function Testimonial() {
   return (
     <section className="bg-white text-[#0C0C0C] py-16 px-4">
       <div className="max-w-6xl mx-auto text-center space-y-10">
-        <h2 className="text-4xl md:text-5xl font-semibold font-serif text-[#352a1c]">
+        <h2 className="text-4xl md:text-5xl font-medium font-playfair tracking-wide text-[#2C2C2C]">
           What Our Clients Say
         </h2>
 

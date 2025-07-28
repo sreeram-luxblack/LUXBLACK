@@ -41,7 +41,7 @@ export default function Luxury() {
 
   return (
     <section className="w-full bg-[#f8f5f0] pt-14 pb-7 md:py-16 px-4">
-      <h2 className="text-center text-[32px] md:text-[48px] font-semibold  text-[#2C2C2C] mb-10">
+      <h2 className="text-center text-[32px] md:text-[48px] font-medium font-playfair tracking-wide text-[#2C2C2C] mb-10">
         Choose your Service
       </h2>
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 perspective">
@@ -59,7 +59,7 @@ export default function Luxury() {
                 className="object-cover"
               />
               <div className="absolute inset-0 bg-black/40 flex items-center justify-center px-4">
-                <h3 className="text-2xl font-playfair text-white text-center">
+                <h3 className="text-2xl font-playfair font-bold [text-shadow:2px_2px_4px_rgba(0,0,0,0.6)] text-white text-center">
                   {collection.title}
                 </h3>
               </div>
@@ -67,13 +67,13 @@ export default function Luxury() {
 
             {/* BACK */}
             <div className="absolute inset-0 bg-white backdrop-blur-md text-[#C9B87A] rounded-xl p-6 transform rotate-y-180 backface-hidden overflow-y-auto shadow-2xl border border-[#C9B87A]/40">
-              <h3 className="text-2xl font-heading mb-6 font-bold text-center tracking-wide text-[#fec254]">
+              <h3 className="text-2xl font-heading mb-6 font-bold  text-center tracking-wide font-playfair text-[#f9b22e]">
                 {collection.title}
               </h3>
-              <p className="text-[#000000] mb-5  text-sm lg:text-xl leading-relaxed font-body">
+              <p className="text-[#000000] mb-5  text-sm lg:text-lg leading-relaxed font-body">
                 {collection.subheadline}
               </p>
-              <ul className="list-disc list-inside space-y-2 text-black text-sm lg:text-[18px] font-body">
+              <ul className="list-disc list-inside space-y-2 text-black text-sm lg:text-[16px] font-body">
                 {collection.bullets.map((point, idx) => {
                   const [boldPart, ...rest] = point.split("—"); // split on dash
                   return (

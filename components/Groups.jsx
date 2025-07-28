@@ -51,7 +51,7 @@ export default function Groups() {
 
   return (
     <section className="bg-[#F8F5F0] py-[50px] md:py-[70px] px-4">
-      <h2 className="text-center text-[30px] md:text-[48px] font-semibold font-serif text-[#352a1c] mb-10  ">
+      <h2 className="text-center text-[30px] md:text-[48px] font-medium font-playfair tracking-wide text-[#2C2C2C] mb-10  ">
         <span className=""> Select Your </span>
         <br className="block sm:hidden text-[40px] md:text-[48px]"></br>Bespoke
         Journey
@@ -99,7 +99,7 @@ export default function Groups() {
                         height={60}
                         className="object-cover w-full h-[70%]"
                       />
-                      <p className="text-xs text-[#2C2C2C] mt-1 font-body">
+                      <p className="text-xs text-[#2C2C2C] mt-1 font-libre ">
                         {country.name}
                       </p>
                     </div>

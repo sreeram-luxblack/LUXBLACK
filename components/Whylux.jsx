@@ -37,7 +37,7 @@ export default function Whylux() {
   return (
     <section className="bg-white pt-16 pb-5 px-6 sm:px-10">
       <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-2xl sm:text-3xl font-bold uppercase font-serif text-[#352a1c] mb-10">
+        <h2 className="text-2xl sm:text-3xl font-bold uppercase font-playfair tracking-wide text-[#2C2C2C] mb-10">
           Why LuxBlack?
         </h2>
 

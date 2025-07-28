@@ -17,7 +17,7 @@ export default function TiltedCards() {
               className="w-full h-auto object-cover"
             />
           </div>
-          <div className="md:w-1/2 text-gray-800 text-lg leading-relaxed">
+          <div className="md:w-1/2 text-gray-800 text-lg leading-relaxed font-libre">
             <p>
               Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…
               <br />
@@ -37,7 +37,7 @@ export default function TiltedCards() {
               className="w-full h-auto object-cover"
             />
           </div>
-          <div className="md:w-1/2 text-gray-800 text-lg leading-relaxed">
+          <div className="md:w-1/2 text-gray-800 text-lg leading-relaxed font-libre">
             <p>
               Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…
               <br />

@@ -207,7 +207,7 @@ export default function Explore() {
 
   return (
     <div className="p-6 sm:p-10 bg-[#ffffff] lg:pb-22 min-h-fit text-[#4c3c28]">
-      <h1 className="text-3xl sm:text-4xl font-bold text-center mb-6 sm:mb-10">
+      <h1 className="text-3xl sm:text-4xl font-medium font-playfair tracking-wide text-[#2C2C2C] text-center mb-6 sm:mb-10">
         Select your Travel by month and style
       </h1>
 
@@ -319,7 +319,7 @@ export default function Explore() {
             </div>
 
             <div className="p-4 xl:p-6 2xl:p-8">
-              <h2 className="text-sm sm:text-base md:text-lg xl:text-xl 2xl:text-2xl font-semibold text-[#4c3c28] leading-tight">
+              <h2 className="text-sm sm:text-base md:text-lg xl:text-xl 2xl:text-2xl font-semibold text-[#292015] leading-tight">
                 {item.title}
               </h2>
               <p className="text-xs sm:text-sm md:text-base xl:text-lg 2xl:text-xl text-gray-500">
@@ -348,7 +348,7 @@ export default function Explore() {
               className="w-full h-48 sm:h-64 object-cover"
             />
             <div className="p-5">
-              <h2 className="text-xl sm:text-2xl font-bold mb-2">
+              <h2 className="text-xl sm:text-2xl font-bold font-playfair tracking-wide text-[#2C2C2C] mb-2">
                 {selected.title}
               </h2>
               <p className="text-gray-700 mb-3 text-sm sm:text-base">

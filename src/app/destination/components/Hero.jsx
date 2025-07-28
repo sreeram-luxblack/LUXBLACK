@@ -22,7 +22,7 @@ export default function Hero() {
       {/* Centered Text */}
       <div className="relative z-20 flex items-center justify-center h-full px-4 text-center">
         <div className="text-white max-w-3xl">
-          <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+          <h1 className="text-4xl md:text-6xl font-semibold leading-tight font-libre">
            Go Beyond the Map <br></br> Where Your Story Begins
 
           </h1>
