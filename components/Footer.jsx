@@ -11,6 +11,21 @@ import { MdArrowForwardIos } from "react-icons/md";
 import { HiOutlineMail, HiOutlinePhone } from "react-icons/hi";
 
 export default function Footer() {
+  const socialLinks = [
+    {
+      icon: FaInstagram,
+      url: "https://www.instagram.com/luxblackone/?utm_source=ig_web_button_share_sheet", // Replace with your actual Instagram URL
+    },
+    {
+      icon: FaLinkedinIn,
+      url: "https://linkedin.com/in/yourprofile", // Replace with your actual LinkedIn URL
+    },
+    {
+      icon: FaWhatsapp,
+      url: "https://wa.me/918111071115", // Replace with your actual WhatsApp link
+    },
+  ];
+
   return (
     <footer className="relative bg-[#F8F5F0] text-[#2C2C2C] border-t-4 border-[#C9B87A] overflow-hidden">
       {/* ✅ Background Image Layer */}
@@ -39,12 +54,19 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto pb-16 px-6 flex flex-col items-center md:space-y-10 space-y-6 ">
           {/* Social Icons */}
           <div className="flex gap-8 flex-wrap justify-center">
-            {[FaInstagram, FaLinkedinIn, FaWhatsapp].map((Icon, idx) => (
-              <Icon
+            {socialLinks.map(({ icon: Icon, url }, idx) => (
+              <a
                 key={idx}
-                size={36}
-                className="text-[#2C2C2C] hover:text-[#C9B87A] hover:scale-110 transition-all duration-300 cursor-pointer"
-              />
+                href={url}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`Social Link ${idx + 1}`}
+              >
+                <Icon
+                  size={36}
+                  className="text-[#2C2C2C] hover:text-[#C9B87A] hover:scale-110 transition-all duration-300 cursor-pointer"
+                />
+              </a>
             ))}
           </div>
 
