@@ -36,7 +36,7 @@ const categories = [
   },
   {
     title: "Groups",
-    image: "/images/group1.jpg",
+    image: "/images/group2.jpg",
     countries: [
       { name: "Thailand", image: "/home/l.jpg" },
       { name: "Vietnam", image: "/home/viet.jpg" },

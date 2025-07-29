@@ -8,7 +8,7 @@ export default function Hero() {
     <section className="relative w-full h-[85vh] overflow-hidden">
       {/* Background Video */}
       <Image
-        src="/images/destination.jpg" // Replace with your image path
+        src="/images/dest.jpg" // Replace with your image path
         alt="Luxurious contact background"
         layout="fill"
         objectFit="cover"
@@ -22,7 +22,7 @@ export default function Hero() {
       {/* Centered Text */}
       <div className="relative z-20 flex items-center justify-center h-full px-4 text-center">
         <div className="text-white max-w-3xl">
-          <h1 className="text-4xl md:text-6xl font-semibold leading-tight font-libre">
+          <h1 className="text-4xl md:text-6xl font-medium [text-shadow:2px_2px_4px_rgba(0,0,0,0.6)] leading-tight  font-playfair tracking-wide text-[#ffffff]">
            Go Beyond the Map <br></br> Where Your Story Begins
 
           </h1>

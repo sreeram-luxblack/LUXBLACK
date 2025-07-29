@@ -48,7 +48,7 @@ export default function Luxury() {
         {collections.map((collection, index) => (
           <div
             key={index}
-            className="group [transform-style:preserve-3d] transition-transform duration-700 relative h-[400px] md:h-[600px] rounded-xl"
+            className="group [transform-style:preserve-3d] transition-transform duration-700 relative h-[430px] md:h-[600px] rounded-xl"
           >
             {/* FRONT */}
             <div className="absolute inset-0 rounded-xl overflow-hidden shadow-lg backface-hidden">
@@ -56,7 +56,7 @@ export default function Luxury() {
                 src={collection.image}
                 alt={collection.title}
                 fill
-                className="object-cover"
+                className="object-cover brightness-80"
               />
               <div className="absolute inset-0 bg-black/40 flex items-center justify-center px-4">
                 <h3 className="text-2xl font-playfair font-bold [text-shadow:2px_2px_4px_rgba(0,0,0,0.6)] text-white text-center">
@@ -66,19 +66,19 @@ export default function Luxury() {
             </div>
 
             {/* BACK */}
-            <div className="absolute inset-0 bg-white backdrop-blur-md text-[#C9B87A] rounded-xl p-6 transform rotate-y-180 backface-hidden overflow-y-auto shadow-2xl border border-[#C9B87A]/40">
-              <h3 className="text-2xl font-heading mb-6 font-bold  text-center tracking-wide font-playfair text-[#f9b22e]">
+            <div className="absolute inset-0 bg-[#232323] backdrop-blur-md text-[#C9B87A] rounded-xl p-6 transform rotate-y-180 backface-hidden overflow-y-auto shadow-2xl border border-[#C9B87A]/40">
+              <h3 className="text-2xl font-heading mb-6   text-center tracking-wide font-playfair text-[#e8cc67]">
                 {collection.title}
               </h3>
-              <p className="text-[#000000] mb-5  text-sm lg:text-lg leading-relaxed font-body">
+              <p className="text-[#f9f9f9] mb-5 font-playfair text-sm lg:text-lg leading-relaxed font-body">
                 {collection.subheadline}
               </p>
-              <ul className="list-disc list-inside space-y-2 text-black text-sm lg:text-[16px] font-body">
+              <ul className="list-disc list-inside space-y-2 text-[#fff] text-sm  lg:text-[16px] font-normal ">
                 {collection.bullets.map((point, idx) => {
                   const [boldPart, ...rest] = point.split("—"); // split on dash
                   return (
-                    <li key={idx} className="opacity-90   text-[#000000e6]">
-                      <strong className="text-[#000000]  ">
+                    <li key={idx} className="opacity-90   text-[#ededede6]">
+                      <strong className="text-[#ffffff]  ">
                         {boldPart.trim()}
                       </strong>
                       {rest.length > 0 ? ` —${rest.join("—")}` : ""}

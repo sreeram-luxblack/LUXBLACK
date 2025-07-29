@@ -32,10 +32,10 @@ export default function Footer() {
         </div>
 
         {/* Divider Line */}
-        <div className="h-[2px] w-24 bg-gradient-to-r from-[#C9B87A] to-[#A78B49] mx-auto my-10 rounded-full" />
+        <div className="h-[2px] w-24 bg-gradient-to-r from-[#C9B87A] to-[#A78B49] mx-auto my-5 md:my-10 rounded-full" />
 
         {/* Footer Core */}
-        <div className="max-w-7xl mx-auto pb-16 px-6 flex flex-col items-center space-y-12">
+        <div className="max-w-7xl mx-auto pb-16 px-6 flex flex-col items-center md:space-y-10 space-y-6 ">
           {/* Social Icons */}
           <div className="flex gap-8 flex-wrap justify-center">
             {[FaInstagram, FaLinkedinIn, FaWhatsapp].map((Icon, idx) => (
@@ -49,10 +49,11 @@ export default function Footer() {
 
           {/* Contact Info */}
           <div className="flex flex-col sm:flex-row gap-8 items-center text-[#2C2C2C] text-base font-medium">
+            {/* Email */}
             <div className="flex items-center gap-2 group cursor-pointer">
               <HiOutlineMail size={20} />
               <a
-                href="mailto:info@blacktomato.com"
+                href="mailto:info@luxblackone.com"
                 className="hover:text-[#C9B87A] transition-colors"
               >
                 info@luxblackone.com
@@ -62,14 +63,35 @@ export default function Footer() {
                 className="group-hover:translate-x-1 transition-transform duration-300"
               />
             </div>
-            <div className="flex items-center gap-2">
-              <HiOutlinePhone size={20} />
-              <p>+91 8111 8333 91</p>
+
+            <div className="flex justify-between gap-5 md:gap-8">
+              <div className="flex items-center gap-2">
+                <HiOutlinePhone size={20} />
+                <p>+91 81110 71115</p>
+              </div>
+
+              {/* Phone 2 */}
+              <div className="flex items-center gap-2">
+                <HiOutlinePhone size={20} />
+                <p>+91 63817 97305</p>
+              </div>
             </div>
-            <div className="flex items-center gap-2">
-              <HiOutlinePhone size={20} />
-              <p>+91 63817 97305</p>
-            </div>
+          </div>
+
+          {/* Address Section */}
+          <div className=" mt-2 text-[#2C2C2C]  [text-shadow:2px_2px_4px_rgba(255,255,255,0.3)]  text-base font-medium font-libre space-y-2">
+            <p>
+              Coimbatore – Aadi Complex, Vasanth Nagar, Singanallur, Tamil Nadu
+              641005
+            </p>
+            <p>
+              Chennai – Ramana Associates, S1 Devendran Nagar, Vengaivasal,
+              Medavakkam – 600100
+            </p>
+            <p>
+              Tirupur – 19/85, 15 Velampalayam Main Rd, A.Thirumuruganpoondi,
+              Tiruppur, Tamil Nadu 641652
+            </p>
           </div>
 
           {/* Copyright */}

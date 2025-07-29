@@ -128,7 +128,7 @@ const dynamicCategories = [
           "Underwater fine dining with live orchestral music.",
           "Private yacht charters, butler villas, and curated reef diving.",
         ],
-        images: ["/Maldives/everyday/1.jpeg"],
+        images: ["/Maldives/ultra/1.jpg"],
       },
       {
         title: "LuxBlack Signature Collections – Mid Luxury",
@@ -240,7 +240,7 @@ export default function Country() {
           opacity: "20%",
         }}
       ></div>
-      <h2 className="text-center relative z-10 text-[24px] md:text-[48px] font-medium  font-playfair tracking-wide text-[#2C2C2C] mb-10 ">
+      <h2 className="text-center relative z-10 text-[24px] md:text-[48px] font-medium font-playfair tracking-wide text-[#2C2C2C] mb-10 ">
         Select your escape
       </h2>
       <RadixAccordion.Root
@@ -304,7 +304,7 @@ export default function Country() {
               </RadixAccordion.Trigger> */}
 
               <RadixAccordion.Trigger className="w-full flex justify-between items-center px-6 py-4 text-lg sm:text-xl font-semibold text-[#000000] bg-[#fff0] border border-[#000000] rounded-xl shadow-sm hover:shadow-md hover:bg-[#fffefc8a] transition-all duration-300">
-                <span className="font-heading   tracking-wide text-[#2C2C2C]">
+                <span className="font-medium font-playfair tracking-wide text-[#2C2C2C]">
                   {category.title}
                 </span>
                 <span
@@ -340,7 +340,7 @@ export default function Country() {
                     <ImageSlider images={card.images} />
                   </div>
                   <div className="md:w-1/2 w-full p-4 bg-[#ffffff] flex flex-col justify-center">
-                    <h3 className="text-xl font-bold text-[#2C2C2C] mb-2">
+                    <h3 className="text-xl font-medium font-playfair tracking-wide text-[#2C2C2C] mb-2">
                       {card.title}
                     </h3>
                     <p className="mb-3 text-sm text-[#2C2C2C]/90">

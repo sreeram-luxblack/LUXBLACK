@@ -1,16 +1,11 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
-import Nav from "../../components/Nav"
-import Footer from "../../components/Footer"
-import { Inter, Libre_Baskerville, Playfair_Display } from 'next/font/google';
+import Nav from "../../components/Nav";
+import Footer from "../../components/Footer";
 
-const inter = Inter({ subsets: ['latin'], variable: '--font-body' });
-
-const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-heading' });
-
-
+// Load fonts
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -23,22 +18,29 @@ const geistMono = Geist_Mono({
   display: "swap",
 });
 
+const inter = Inter({ subsets: ["latin"], variable: "--font-body" });
+const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-heading" });
+
+// Metadata
 export const metadata: Metadata = {
   title: "LuxBlack",
-  description: "Travel Ajency",
+  description: "Travel Agency",
 };
 
+// Root layout
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
-      <body className="antialiased font-sans">
-        <Nav></Nav>
+    <html lang="en">
+      <body
+        className={`antialiased font-sans ${geistSans.variable} ${geistMono.variable} ${inter.variable} ${playfair.variable}`}
+      >
+        <Nav />
         {children}
-        <Footer></Footer>
+        <Footer />
       </body>
     </html>
   );

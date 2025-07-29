@@ -249,13 +249,13 @@ export default function Explore() {
       <div className="flex flex-col sm:flex-row justify-center gap-6 sm:gap-8 mb-10 text-[#4c3c28]">
         {/* Month Filter */}
         <div className="flex flex-col gap-1">
-          <label className="text-sm font-semibold mb-1 text-[#4c3c28]">
+          <label className="text-sm font-semibold mb-1 text-[#4c3c28] font-playfair ">
             Month
           </label>
           <select
             value={month}
             onChange={(e) => setMonth(e.target.value)}
-            className="w-full sm:w-52 h-11 border border-[#d1bfa7] rounded-lg px-3 text-[#4c3c28] bg-white focus:outline-none focus:ring-2 focus:ring-[#c9b87a] shadow-sm transition-all"
+            className="w-full sm:w-52 h-11 border border-[#d1bfa7] rounded-lg px-3 text-[#4c3c28] bg-white focus:outline-none focus:ring-2 focus:ring-[#c9b87a] shadow-sm transition-all "
           >
             {months.map((m, i) => (
               <option key={i} value={m}>
@@ -267,7 +267,7 @@ export default function Explore() {
 
         {/* Category Filter */}
         <div className="flex flex-col gap-1">
-          <label className="text-sm font-semibold mb-1 text-[#4c3c28]">
+          <label className="text-sm font-semibold mb-1 text-[#4c3c28] font-playfair ">
             Travel Type
           </label>
           <select
@@ -319,10 +319,10 @@ export default function Explore() {
             </div>
 
             <div className="p-4 xl:p-6 2xl:p-8">
-              <h2 className="text-sm sm:text-base md:text-lg xl:text-xl 2xl:text-2xl font-semibold text-[#292015] leading-tight">
+              <h2 className="text-sm sm:text-base md:text-lg xl:text-xl 2xl:text-2xl font-medium font-playfair tracking-wide text-[#2C2C2C] leading-tight">
                 {item.title}
               </h2>
-              <p className="text-xs sm:text-sm md:text-base xl:text-lg 2xl:text-xl text-gray-500">
+              <p className="text-xs sm:text-sm md:text-base xl:text-lg 2xl:text-xl font-medium font-playfair tracking-wide  text-gray-500">
                 {item.subtitle}
               </p>
             </div>

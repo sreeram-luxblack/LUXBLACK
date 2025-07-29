@@ -19,7 +19,7 @@ export default function Hero() {
         <h1 className="text-4xl sm:text-6xl font-playfair  text-[#ffffff]  drop-shadow-lg tracking-wide">
           Let's Connect
         </h1>
-        <p className="mt-8 text-lg sm:text-xl max-w-2xl text-[#ffffff] font-libre  drop-shadow-md">
+        <p className="mt-8 text-lg sm:text-xl max-w-2xl text-[#ffffff] font-medium font-playfair tracking-wide  drop-shadow-md">
           Let’s begin curating your escape. Please share a few details so our travel atelier can design your journey with precision and care
         </p>
       </div>

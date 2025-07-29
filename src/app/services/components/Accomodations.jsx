@@ -63,7 +63,7 @@ export default function Accomodation() {
             A World of Experiences, <br className="block md:hidden"></br>{" "}
             Tailored for You
           </h2>
-          <p className="text-base sm:text-lg max-w-2xl mx-auto font-sans">
+          <p className="text-base sm:text-lg max-w-2xl mx-auto font-medium font-playfair tracking-wide text-[#2C2C2C]">
             Curated travel experiences that blend luxury with comfort, for those
             who travel often and well.
           </p>
@@ -143,7 +143,7 @@ export default function Accomodation() {
             ))}
           </Swiper>
 
-          <p className="text-center max-w-2xl mx-auto  text-sm sm:text-base">
+          <p className="text-center max-w-2xl mx-auto  text-sm sm:text-base font-medium font-playfair tracking-wide text-[#2C2C2C]">
             Arrive in style—be it by sea, sky, or the stories in between.
           </p>
         </div>

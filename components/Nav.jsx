@@ -21,10 +21,12 @@ export default function Navbar() {
   return (
     <header
       className={`fixed top-0 w-full z-50 transition-colors duration-300 ${
-        scrolled ? "bg-[#201f1f7f] backdrop-blur-[4px] shadow-lg " : "bg-transparent"
+        scrolled
+          ? "bg-[#201f1f7f] backdrop-blur-[4px] shadow-lg "
+          : "bg-transparent"
       }`}
     >
-      <div className="mx-auto px-10 2xl:px-20 py-4 flex justify-between items-center relative">
+      <div className="mx-auto px-10 2xl:px-20 py-4 flex justify-between items-center font-playfair relative">
         {/* Left Nav */}
         <nav className="hidden md:flex items-center space-x-8 text-[#ffffff] text-base font-medium">
           <Link
@@ -70,8 +72,10 @@ export default function Navbar() {
 
       {/* ✨ Mobile Fullscreen Dropdown */}
       <div
-        className={`md:hidden fixed top-0 left-0 w-full h-screen bg-[#000000d9] backdrop-blur-xl z-20 transition-transform duration-300 ease-in-out ${
-          isOpen ? "translate-y-0 opacity-100 " : "-translate-y-full opacity-0 pointer-events-none"
+        className={`md:hidden fixed top-0 left-0 w-full font-playfair h-screen bg-[#000000d9] backdrop-blur-xl z-20 transition-transform duration-300 ease-in-out ${
+          isOpen
+            ? "translate-y-0 opacity-100 "
+            : "-translate-y-full opacity-0 pointer-events-none"
         }`}
       >
         <div className="flex flex-col items-center justify-center h-full gap-6 text-white text-lg font-medium tracking-wide px-6">
