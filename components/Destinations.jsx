@@ -42,7 +42,7 @@ const destinations = [
   {
     title: "Vietnam",
     subtitle: "Heritage Trails & Hidden Bays",
-    image: "/home/viet1.jpg",
+    image: "/home/viet.jpg",
     description:
       "Cruise through emerald bays, wander lantern-lit towns, and let every meal feel like poetry—Vietnam is gentle, vibrant, and endlessly layered.",
     points: [
@@ -75,10 +75,10 @@ export default function Destinations() {
               className="w-full h-48 sm:h-56 object-cover"
             />
             <div className="p-4 sm:p-5">
-              <h2 className="text-lg sm:text-2xl font-semibold  mb-1">
+              <h2 className="text-lg sm:text-2xl font-semibold  mb-1 font-playfair tracking-wide text-[#2C2C2C]">
                 {item.title}
               </h2>
-              <p className="text-sm text-gray-600">{item.subtitle}</p>
+              <p className="text-sm text-gray-600 font-playfair tracking-wide ">{item.subtitle}</p>
             </div>
           </div>
         ))}
@@ -105,10 +105,10 @@ export default function Destinations() {
 
             {/* Content */}
             <div className="p-5 sm:p-6">
-              <h2 className="text-xl sm:text-3xl font-bold mb-3 font-playfair">
+              <h2 className="text-xl sm:text-3xl font-bold mb-3 font-playfair tracking-wide text-[#2C2C2C]">
                 {selected.title}
               </h2>
-              <p className="mb-4 text-gray-700 leading-relaxed text-sm sm:text-base">
+              <p className="mb-4 text-gray-700 leading-relaxed text-sm sm:text-base ">
                 {selected.description}
               </p>
               <ul className="list-disc list-inside space-y-2 text-gray-800 text-sm sm:text-base">

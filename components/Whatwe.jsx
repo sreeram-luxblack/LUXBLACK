@@ -14,7 +14,7 @@ export default function Whatwe() {
             Travel, the Way It Was Meant to Be — Slow, Soulful, Yours. Not Just
             a Destination. A Feeling You’ll Return To.
           </p>
-          <button className="bg-[#2C2C2C]  text-white px-6 py-3 font-inter text-sm font-semibold uppercase tracking-wider hover:bg-[#424242] transition rounded-md w-fit mx-auto lg:mx-0">
+          <button className="bg-[#2C2C2C]  text-white px-6 py-3 font-inter text-sm font-semibold uppercase tracking-wider hover:bg-[#424242] transition rounded-md w-fit mx-auto lg:mx-0 ">
             Watch the Film
           </button>
         </div>

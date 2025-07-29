@@ -69,7 +69,7 @@ export default function Testimonial() {
                     <p className="font-semibold font-playfair text-[#C9B87A]">
                       {testimonial.name}
                     </p>
-                    <p className="text-sm text-[#2C2C2C]">
+                    <p className="text-sm text-[#2C2C2C] font-playfair ">
                       {testimonial.title}
                     </p>
                   </div>

@@ -48,7 +48,7 @@ export default function Whylux() {
               className="flex flex-col items-center text-center space-y-3"
             >
               <Icon size={48} style={{ color }} />
-              <p className="text-sm text-[#2C2C2C] font-libre max-w-[140px] ">
+              <p className="text-sm  font-playfair tracking-wide text-[#2C2C2C] max-w-[140px] ">
                 {title}
               </p>
             </div>
