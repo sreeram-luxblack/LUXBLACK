@@ -19,7 +19,7 @@ export default function Footer() {
     },
     {
       icon: FaLinkedinIn,
-      url: "https://linkedin.com/in/yourprofile", // Replace with your actual LinkedIn URL
+      url: "https://www.linkedin.com/company/luxblack/?viewAsMember=true", // Replace with your actual LinkedIn URL
     },
     {
       icon: FaWhatsapp,
