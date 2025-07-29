@@ -16,19 +16,21 @@ export default function TiltedCards() {
               className="w-full h-auto object-cover"
             />
           </div>
-          <div className="md:w-1/2  text-lg leading-relaxed font-medium font-sarif tracking-wide text-[#2C2C2C]">
-          
+          <div className="md:w-1/2 text-lg leading-relaxed font-medium font-serif tracking-wide text-[#2C2C2C]">
+            <h2 className="text-3xl lg:text-4xl mb-6 font-playfair font-semibold text-[#000000] tracking-wide">
+              Beyond Travel — Into Soulful Journeys
+            </h2>
             <p>
               You wanted more than tickets and itineraries. You craved the
               silence of sunrise… The warmth of a place that remembers your
               name…
-              <br></br>
-              <br></br>
+              <br />
+              <br />
               The stillness of a moment that lives on in memory, not in photos.
-              <br></br>
-              <br></br>
+              <br />
+              <br />
               At Lux Black, we don’t just plan travel. We curate stories that
-              are felt not told. Stories that begin the moment you dream… and
+              are felt, not told. Stories that begin the moment you dream… and
               stay with you long after you return.
             </p>
           </div>
@@ -45,19 +47,22 @@ export default function TiltedCards() {
               className="w-full h-auto object-cover"
             />
           </div>
-          <div className="md:w-1/2  text-lg leading-relaxed font-medium font-sarif tracking-wide text-[#2C2C2C]">
+          <div className="md:w-1/2 text-lg leading-relaxed font-medium font-serif tracking-wide text-[#2C2C2C]">
+            <h2 className="text-3xl lg:text-4xl mb-6 font-playfair font-semibold text-[#000000] tracking-wide">
+              The Art of Thoughtful Travel
+            </h2>
             <p>
-              Each journey we design is woven with care with slow mornings,
+              Each journey we design is woven with care — with slow mornings,
               soulful encounters, and experiences that awaken joy, stillness,
               and awe.
-              <br></br>
-              <br></br>
+              <br />
+              <br />
               This isn’t luxury that shouts. This is luxury that whispers in a
               handwritten note waiting in your villa, a local elder sharing
               legends under starlight, a hidden café tucked away from the
               crowds.
-              <br></br>
-              <br></br>
+              <br />
+              <br />
               We believe true luxury is not measured in stars, but in how deeply
               you feel each moment.
             </p>

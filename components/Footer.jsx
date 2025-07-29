@@ -91,13 +91,13 @@ export default function Footer() {
             <div className="flex justify-between flex-col md:flex-row gap-5 md:gap-8">
               <div className="flex items-center gap-2">
                 <HiOutlinePhone size={20} />
-                <p>+91 81110 71115</p>
+                <p className="text-[18px] font-sarif">+91 81110 71115</p>
               </div>
 
               {/* Phone 2 */}
               <div className="flex items-center gap-2">
                 <HiOutlinePhone size={20} />
-                <p>+91 63817 97305</p>
+                <p className="text-[18px] font-sarif">+91 63817 97305</p>
               </div>
             </div>
           </div>
