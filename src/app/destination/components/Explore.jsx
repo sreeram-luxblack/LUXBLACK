@@ -11,7 +11,7 @@ const countries = [
     description:
       "Private overwater villas, champagne sunsets, and the quiet rhythm of the ocean—it’s where time slows and the sea speaks in soft whispers.",
     months: ["January", "February", "March", "November", "December"],
-    categories: ["honeymoon", "luxury", "couple"],
+    categories: ["honeymoon", "couple"],
     status: "Recommended",
   },
   {
@@ -21,7 +21,7 @@ const countries = [
     description:
       "Golden dunes by day, glittering skyline by night—Dubai is a world built on wonder, indulgence, and imagination.",
     months: ["January", "February", "March", "November", "December"],
-    categories: ["luxury", "family", "group"],
+    categories: ["family", "group"],
     status: "Recommended",
   },
   {
@@ -31,7 +31,7 @@ const countries = [
     description:
       "Golden temples, private islands, and food that tells a story—Thailand is where indulgence meets ancient spirit.",
     months: ["January", "February", "August", "November"],
-    categories: ["honeymoon", "luxury", "cultural"],
+    categories: ["couple", "group"],
     status: "Recommended",
   },
   {
@@ -41,7 +41,7 @@ const countries = [
     description:
       "From tea plantations in the clouds to sun-kissed southern shores—Sri Lanka is wild, wise, and wonderfully private.",
     months: ["January", "March", "December"],
-    categories: ["adventure", "honeymoon", "luxury"],
+    categories: ["honeymoon", "couple", "family"],
     status: "Recommended",
   },
   {
@@ -51,7 +51,7 @@ const countries = [
     description:
       "Pearl-white beaches, untouched islands, and the hush of exclusivity—Seychelles is nature’s most intimate secret.",
     months: ["January", "May", "October", "December"],
-    categories: ["honeymoon", "luxury", "nature"],
+    categories: ["honeymoon"],
     status: "Recommended",
   },
   {
@@ -61,7 +61,7 @@ const countries = [
     description:
       "Cruise through emerald bays, wander lantern-lit towns, and let every meal feel like poetry—Vietnam is gentle, vibrant, and endlessly layered.",
     months: ["February", "March", "April", "September", "October"],
-    categories: ["couple", "luxury", "cultural"],
+    categories: ["family"],
     status: "Trending🔥",
   },
   {
@@ -71,7 +71,7 @@ const countries = [
     description:
       "A garden in the sky, a city of elegance. Singapore offers seamless design, curated indulgence, and the future wrapped in luxury.",
     months: ["February", "April", "July"],
-    categories: ["luxury", "family", "city"],
+    categories: ["family", "group"],
     status: "Recommended",
   },
   {
@@ -81,7 +81,7 @@ const countries = [
     description:
       "From rainforest retreats to cultural gold, Malaysia holds richness in its contrasts—quiet, bold, and full of soul.",
     months: ["March"],
-    categories: ["luxury", "adventure", "nature"],
+    categories: ["family", "group"],
     status: "Trending🔥",
   },
   {
@@ -91,7 +91,7 @@ const countries = [
     description:
       "Istanbul’s skyline at dusk, Cappadocia’s sky at dawn—Turkey is a tapestry of cultures, textures, and timeless luxury.",
     months: ["April", "June", "September", "October"],
-    categories: ["luxury", "honeymoon", "cultural"],
+    categories: ["honeymoon"],
     status: "Trending🔥",
   },
   {
@@ -101,7 +101,7 @@ const countries = [
     description:
       "Vineyards kissed by mountains, warm-hearted villages, and cuisine that comforts—Georgia is charm served with a toast.",
     months: ["April", "May", "September", "October"],
-    categories: ["luxury", "adventure", "cultural"],
+    categories: ["adventure", "cultural", "luxury"], // Not in any of your lists
     status: "Recommended",
   },
   {
@@ -111,7 +111,7 @@ const countries = [
     description:
       "Sacred temples, serene villas, and slow rituals of care—Bali is a pause button for the soul.",
     months: ["April", "May", "July", "August", "October"],
-    categories: ["honeymoon", "luxury", "spiritual"],
+    categories: ["honeymoon", "family", "couple"],
     status: "Recommended",
   },
   {
@@ -121,7 +121,7 @@ const countries = [
     description:
       "Lush volcanic peaks meet sapphire lagoons. Mauritius is where barefoot luxury dances with island soul.",
     months: ["May", "November"],
-    categories: ["honeymoon", "family", "luxury"],
+    categories: ["honeymoon", "couple"],
     status: "Trending🔥",
   },
   {
@@ -131,7 +131,7 @@ const countries = [
     description:
       "Where modern cities rise from steppe lands and ancient silence fills the air—Kazakhstan is untouched grandeur with a modern twist.",
     months: ["May", "September"],
-    categories: ["adventure", "cultural", "luxury"],
+    categories: ["adventure", "cultural", "luxury"], // Not in any list
     status: "Recommended",
   },
   {
@@ -141,7 +141,7 @@ const countries = [
     description:
       "Snow-dusted peaks, quiet lakeside villages, and alpine calm—Switzerland is elegance in every breath.",
     months: ["June", "July", "August"],
-    categories: ["luxury", "honeymoon", "nature"],
+    categories: ["couple", "group"],
     status: "Recommended",
   },
   {
@@ -151,7 +151,7 @@ const countries = [
     description:
       "Whether it’s Parisian perfume or Provencal air, France offers romance, refinement, and reverie—always effortlessly.",
     months: ["June", "August", "September"],
-    categories: ["luxury", "honeymoon", "cultural"],
+    categories: ["honeymoon", "group"],
     status: "Recommended",
   },
   {
@@ -161,7 +161,7 @@ const countries = [
     description:
       "Tuscan vineyards, Amalfi cliffs, and timeless piazzas—Italy isn’t just seen, it’s felt.",
     months: ["June", "July", "September"],
-    categories: ["honeymoon", "luxury", "cultural"],
+    categories: ["couple", "group"],
     status: "Recommended",
   },
   {
@@ -171,7 +171,7 @@ const countries = [
     description:
       "Whitewashed dreams under Aegean skies—Greece is mythology, beauty, and slow summer love.",
     months: ["June", "July", "August"],
-    categories: ["honeymoon", "luxury", "island"],
+    categories: ["couple"],
     status: "Recommended",
   },
 ];
@@ -210,41 +210,6 @@ export default function Explore() {
       <h1 className="text-3xl sm:text-4xl font-medium font-playfair tracking-wide text-[#2C2C2C] text-center mb-6 sm:mb-10">
         Select your Travel by month and style
       </h1>
-
-      {/* Filters */}
-      {/* <div className="flex flex-col sm:flex-row justify-center gap-8 mb-10 text-[#4c3c28]">
-       
-        <div className="flex items-center gap-2 border-b-2 border-[#d1bfa7] pb-1">
-          <span className="text-base font-medium">Month</span>
-          <select
-            value={month}
-            onChange={(e) => setMonth(e.target.value)}
-            className="w-40 sm:w-48 h-10 bg-transparent text-[#4c3c28] focus:outline-none"
-          >
-            {months.map((m, i) => (
-              <option key={i} value={m}>
-                {m}
-              </option>
-            ))}
-          </select>
-        </div>
-
- 
-        <div className="flex items-center gap-2 border-b-2 border-[#d1bfa7] pb-1">
-          <span className="text-base font-medium">Travel Type</span>
-          <select
-            value={category}
-            onChange={(e) => setCategory(e.target.value)}
-            className="w-40 sm:w-48 h-10 bg-transparent text-[#4c3c28] focus:outline-none"
-          >
-            {categories.map((c, i) => (
-              <option key={i} value={c}>
-                {c.charAt(0).toUpperCase() + c.slice(1)}
-              </option>
-            ))}
-          </select>
-        </div>
-      </div> */}
 
       <div className="flex flex-col sm:flex-row justify-center gap-6 sm:gap-8 mb-10 text-[#4c3c28]">
         {/* Month Filter */}
@@ -299,23 +264,6 @@ export default function Explore() {
                 loading="lazy"
                 className="w-full h-36 sm:h-44 md:h-52 xl:h-60 2xl:h-72 object-cover"
               />
-
-              {/* Status Tag */}
-              {/* {item.status && (
-                <span
-                  className={`absolute top-2 left-2 text-white text-[10px] sm:text-xs px-4  py-1.5 rounded-full shadow-sm
-      ${
-        item.status === "Trending🔥"
-          ? "bg-gradient-to-r from-orange-500 to-yellow-400"
-          : item.status === "Recommended"
-          ? "bg-gradient-to-r from-green-500 to-blue-400"
-          : "bg-gradient-to-r from-green-500 to-blue-400"
-      }
-    `}
-                >
-                  {item.status}
-                </span>
-              )} */}
             </div>
 
             <div className="p-4 xl:p-6 2xl:p-8">

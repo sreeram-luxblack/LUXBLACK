@@ -5,6 +5,7 @@ import {
   FaFacebookF,
   FaXTwitter,
   FaWhatsapp,
+  FaLocationPin,
 } from "react-icons/fa6";
 import { MdArrowForwardIos } from "react-icons/md";
 import { HiOutlineMail, HiOutlinePhone } from "react-icons/hi";
@@ -64,7 +65,7 @@ export default function Footer() {
               />
             </div>
 
-            <div className="flex justify-between gap-5 md:gap-8">
+            <div className="flex justify-between flex-col md:flex-row gap-5 md:gap-8">
               <div className="flex items-center gap-2">
                 <HiOutlinePhone size={20} />
                 <p>+91 81110 71115</p>
@@ -79,19 +80,44 @@ export default function Footer() {
           </div>
 
           {/* Address Section */}
-          <div className=" mt-2 text-[#2C2C2C]  [text-shadow:2px_2px_4px_rgba(255,255,255,0.3)]  text-base font-medium font-libre space-y-2">
-            <p>
-              Coimbatore – Aadi Complex, Vasanth Nagar, Singanallur, Tamil Nadu
-              641005
-            </p>
-            <p>
-              Chennai – Ramana Associates, S1 Devendran Nagar, Vengaivasal,
-              Medavakkam – 600100
-            </p>
-            <p>
-              Tirupur – 19/85, 15 Velampalayam Main Rd, A.Thirumuruganpoondi,
-              Tiruppur, Tamil Nadu 641652
-            </p>
+          <div className="mt-6 text-[#2C2C2C] md:px-[40px] flex flex-col md:flex-row md:justify-between text-base font-playfair font-medium space-y-6 md:space-y-0 md:space-x-10">
+            <div className="flex items-start gap-3 max-w-md">
+              <span className="text-[#C9B87A] mt-1">
+                <FaLocationPin />
+              </span>
+              <p className="leading-relaxed">
+                <strong className="text-[#C9B87A]">Coimbatore –</strong> Aadi
+                Complex, Vasanth Nagar, Singanallur,
+                <br />
+                Tamil Nadu – <span className="font-semibold">641005</span>
+              </p>
+            </div>
+
+            <div className="flex items-start gap-3 max-w-md">
+              <span className="text-[#C9B87A] mt-1">
+                <FaLocationPin />
+              </span>
+              <p className="leading-relaxed">
+                <strong className="text-[#C9B87A]">Chennai –</strong> Ramana
+                Associates, S1 Devendran Nagar,
+                <br />
+                Vengaivasal, Medavakkam –{" "}
+                <span className="font-semibold">600100</span>
+              </p>
+            </div>
+
+            <div className="flex items-start gap-3 max-w-md">
+              <span className="text-[#C9B87A] mt-1">
+                <FaLocationPin />
+              </span>
+              <p className="leading-relaxed">
+                <strong className="text-[#C9B87A]">Tirupur –</strong> 19/85, 15
+                Velampalayam Main Rd,
+                <br />
+                A.Thirumuruganpoondi, Tiruppur, Tamil Nadu –{" "}
+                <span className="font-semibold">641652</span>
+              </p>
+            </div>
           </div>
 
           {/* Copyright */}
