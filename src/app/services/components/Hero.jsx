@@ -19,9 +19,9 @@ export default function Hero() {
         <h1 className="text-4xl sm:text-6xl  text-[#F8F5F0] drop-shadow-lg font-medium font-playfair tracking-wide ">
          Destinations, Reimagined for You
         </h1>
-        <p className="mt-8 text-lg sm:text-xl max-w-2xl text-[#ffffff] font-medium font-playfair tracking-wide  drop-shadow-md">
+        {/* <p className="mt-8 text-lg sm:text-xl max-w-2xl text-[#ffffff] font-medium font-playfair tracking-wide  drop-shadow-md">
           From daydreams to departure, your next journey which is, effortless and extraordinary, begins here.
-        </p>
+        </p> */}
       </div>
     </section>
   );
