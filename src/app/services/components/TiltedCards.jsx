@@ -18,7 +18,7 @@ export default function TiltedCards() {
           </div>
           <div className="md:w-1/2 text-lg leading-relaxed font-medium font-serif tracking-wide text-[#2C2C2C]">
             <h2 className="text-3xl lg:text-4xl mb-6 font-playfair font-semibold text-[#000000] tracking-wide">
-              Beyond Travel — Into Soulful Journeys
+              Stories You Can Feel
             </h2>
             <p>
               You wanted more than tickets and itineraries. You craved the
@@ -49,7 +49,7 @@ export default function TiltedCards() {
           </div>
           <div className="md:w-1/2 text-lg leading-relaxed font-medium font-serif tracking-wide text-[#2C2C2C]">
             <h2 className="text-3xl lg:text-4xl mb-6 font-playfair font-semibold text-[#000000] tracking-wide">
-              The Art of Thoughtful Travel
+              Beyond Places. Into Moments
             </h2>
             <p>
               Each journey we design is woven with care — with slow mornings,

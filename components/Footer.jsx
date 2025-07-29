@@ -91,7 +91,7 @@ export default function Footer() {
             <div className="flex justify-between flex-col md:flex-row gap-5 md:gap-8">
               <div className="flex items-center gap-2">
                 <HiOutlinePhone size={20} />
-                <p className="text-[18px] font-sarif">+91 81110 71115</p>
+                <p className="text-[20.5px] font-sarif">+91 81110 71115</p>
               </div>
 
               {/* Phone 2 */}
@@ -110,7 +110,7 @@ export default function Footer() {
               </span>
               <p className="leading-relaxed">
                 <strong className="hover:text-[#e8bf37] cursor-pointer">Coimbatore –</strong> Aadi
-                Complex, Vasanth Nagar, Singanallur, Tamil Nadu –{" "}
+                Complex, Vasanth Nagar, Singanallur, Tamil-Nadu –{" "}
                 <span className="font-semibold">641005</span>
               </p>
             </div>
@@ -132,7 +132,7 @@ export default function Footer() {
               </span>
               <p className="leading-relaxed">
                 <strong className="hover:text-[#e8bf37] cursor-pointer">Tirupur –</strong> 19/85, 15
-                Velampalayam Main Rd, A.Thirumuruganpoondi, Tiruppur, Tamil Nadu
+                Velampalayam Main Rd, A.Thirumuruganpoondi, Tiruppur, Tamil-Nadu
                 – <span className="font-semibold">641652</span>
               </p>
             </div>
