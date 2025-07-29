@@ -6,6 +6,7 @@ import {
   FaXTwitter,
   FaWhatsapp,
   FaLocationPin,
+  FaLocationCrosshairs,
 } from "react-icons/fa6";
 import { MdArrowForwardIos } from "react-icons/md";
 import { HiOutlineMail, HiOutlinePhone } from "react-icons/hi";
@@ -105,39 +106,34 @@ export default function Footer() {
           <div className="mt-6 text-[#2C2C2C] md:px-[40px] flex flex-col md:flex-row md:justify-between text-base font-playfair font-medium space-y-6 md:space-y-0 md:space-x-10">
             <div className="flex items-start gap-3 max-w-md">
               <span className="text-[#e8bf37] mt-1">
-                <FaLocationPin />
+                <FaLocationCrosshairs />
               </span>
               <p className="leading-relaxed">
-                <strong className="text-[#e8bf37]">Coimbatore –</strong> Aadi
-                Complex, Vasanth Nagar, Singanallur,
-                <br />
-                Tamil Nadu – <span className="font-semibold">641005</span>
+                <strong className="hover:text-[#e8bf37] cursor-pointer">Coimbatore –</strong> Aadi
+                Complex, Vasanth Nagar, Singanallur, Tamil Nadu –{" "}
+                <span className="font-semibold">641005</span>
               </p>
             </div>
 
             <div className="flex items-start gap-3 max-w-md">
               <span className="text-[#e8bf37] mt-1">
-                <FaLocationPin />
+                <FaLocationCrosshairs />
               </span>
               <p className="leading-relaxed">
-                <strong className="text-[#e8bf37]">Chennai –</strong> Ramana
-                Associates, S1 Devendran Nagar,
-                <br />
-                Vengaivasal, Medavakkam –{" "}
+                <strong className="hover:text-[#e8bf37] cursor-pointer">Chennai –</strong> Ramana
+                Associates, S1 Devendran Nagar, Vengaivasal, Medavakkam –{" "}
                 <span className="font-semibold">600100</span>
               </p>
             </div>
 
             <div className="flex items-start gap-3 max-w-md">
               <span className="text-[#e8bf37] mt-1">
-                <FaLocationPin />
+                <FaLocationCrosshairs />
               </span>
               <p className="leading-relaxed">
-                <strong className="text-[#e8bf37]">Tirupur –</strong> 19/85, 15
-                Velampalayam Main Rd,
-                <br />
-                A.Thirumuruganpoondi, Tiruppur, Tamil Nadu –{" "}
-                <span className="font-semibold">641652</span>
+                <strong className="hover:text-[#e8bf37] cursor-pointer">Tirupur –</strong> 19/85, 15
+                Velampalayam Main Rd, A.Thirumuruganpoondi, Tiruppur, Tamil Nadu
+                – <span className="font-semibold">641652</span>
               </p>
             </div>
           </div>

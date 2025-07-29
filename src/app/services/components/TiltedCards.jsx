@@ -16,7 +16,8 @@ export default function TiltedCards() {
               className="w-full h-auto object-cover"
             />
           </div>
-          <div className="md:w-1/2  text-lg leading-relaxed font-medium font-playfair tracking-wide text-[#2C2C2C]">
+          <div className="md:w-1/2  text-lg leading-relaxed font-medium font-sarif tracking-wide text-[#2C2C2C]">
+          
             <p>
               You wanted more than tickets and itineraries. You craved the
               silence of sunrise… The warmth of a place that remembers your
@@ -44,7 +45,7 @@ export default function TiltedCards() {
               className="w-full h-auto object-cover"
             />
           </div>
-          <div className="md:w-1/2  text-lg leading-relaxed font-medium font-playfair tracking-wide text-[#2C2C2C]">
+          <div className="md:w-1/2  text-lg leading-relaxed font-medium font-sarif tracking-wide text-[#2C2C2C]">
             <p>
               Each journey we design is woven with care with slow mornings,
               soulful encounters, and experiences that awaken joy, stillness,

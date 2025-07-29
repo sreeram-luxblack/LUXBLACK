@@ -48,7 +48,7 @@ export default function Luxury() {
         {collections.map((collection, index) => (
           <div
             key={index}
-            className="group [transform-style:preserve-3d] transition-transform duration-700 relative h-[430px] md:h-[600px] rounded-xl"
+            className="group [transform-style:preserve-3d] transition-transform duration-700 relative h-[450px] md:h-[600px] rounded-xl"
           >
             {/* FRONT */}
             <div className="absolute inset-0 rounded-xl overflow-hidden shadow-lg backface-hidden">
@@ -66,22 +66,29 @@ export default function Luxury() {
             </div>
 
             {/* BACK */}
-            <div className="absolute inset-0 bg-[#232323] backdrop-blur-md text-[#C9B87A] rounded-xl p-6 transform rotate-y-180 backface-hidden overflow-y-auto shadow-2xl border border-[#C9B87A]/40">
-              <h3 className="text-2xl font-heading mb-6   text-center tracking-wide font-playfair text-[#e8cc67]">
+            <div className="absolute inset-0 bg-[#1f1f1f] bg-opacity-95 backdrop-blur-xl text-[#C9B87A] rounded-2xl p-6 lg:p-8 transform rotate-y-180 backface-hidden overflow-y-auto shadow-[0_8px_30px_rgba(0,0,0,0.4)] border border-[#C9B87A]/30 transition-all duration-500 ease-in-out">
+              <h3 className="text-3xl lg:text-4xl font-playfair text-center tracking-wide mb-6 text-[#EBD88F] drop-shadow-sm">
                 {collection.title}
               </h3>
-              <p className="text-[#f9f9f9] mb-5 font-playfair text-sm lg:text-lg leading-relaxed font-body">
+
+              <p className="text-[#f0f0f0] mb-6 font-playfair text-base lg:text-lg leading-relaxed text-center">
                 {collection.subheadline}
               </p>
-              <ul className="list-disc list-inside space-y-2 text-[#fff] text-sm  lg:text-[16px] font-normal ">
+
+              <ul className="list-disc list-inside space-y-3 text-[#f5f5f5] text-sm lg:text-[16px] font-light">
                 {collection.bullets.map((point, idx) => {
-                  const [boldPart, ...rest] = point.split("—"); // split on dash
+                  const [boldPart, ...rest] = point.split("—");
                   return (
-                    <li key={idx} className="opacity-90   text-[#ededede6]">
-                      <strong className="text-[#ffffff]  ">
+                    <li key={idx} className="opacity-95 leading-snug">
+                      <strong className="text-white font-medium">
                         {boldPart.trim()}
                       </strong>
-                      {rest.length > 0 ? ` —${rest.join("—")}` : ""}
+                      {rest.length > 0 ? (
+                        <span className="text-[#dddddd]">
+                          {" "}
+                          —{rest.join("—")}
+                        </span>
+                      ) : null}
                     </li>
                   );
                 })}
