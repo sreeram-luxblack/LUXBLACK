@@ -104,11 +104,11 @@ export default function Footer() {
           {/* Address Section */}
           <div className="mt-6 text-[#2C2C2C] md:px-[40px] flex flex-col md:flex-row md:justify-between text-base font-playfair font-medium space-y-6 md:space-y-0 md:space-x-10">
             <div className="flex items-start gap-3 max-w-md">
-              <span className="text-[#C9B87A] mt-1">
+              <span className="text-[#e8bf37] mt-1">
                 <FaLocationPin />
               </span>
               <p className="leading-relaxed">
-                <strong className="text-[#C9B87A]">Coimbatore –</strong> Aadi
+                <strong className="text-[#e8bf37]">Coimbatore –</strong> Aadi
                 Complex, Vasanth Nagar, Singanallur,
                 <br />
                 Tamil Nadu – <span className="font-semibold">641005</span>
@@ -116,11 +116,11 @@ export default function Footer() {
             </div>
 
             <div className="flex items-start gap-3 max-w-md">
-              <span className="text-[#C9B87A] mt-1">
+              <span className="text-[#e8bf37] mt-1">
                 <FaLocationPin />
               </span>
               <p className="leading-relaxed">
-                <strong className="text-[#C9B87A]">Chennai –</strong> Ramana
+                <strong className="text-[#e8bf37]">Chennai –</strong> Ramana
                 Associates, S1 Devendran Nagar,
                 <br />
                 Vengaivasal, Medavakkam –{" "}
@@ -129,11 +129,11 @@ export default function Footer() {
             </div>
 
             <div className="flex items-start gap-3 max-w-md">
-              <span className="text-[#C9B87A] mt-1">
+              <span className="text-[#e8bf37] mt-1">
                 <FaLocationPin />
               </span>
               <p className="leading-relaxed">
-                <strong className="text-[#C9B87A]">Tirupur –</strong> 19/85, 15
+                <strong className="text-[#e8bf37]">Tirupur –</strong> 19/85, 15
                 Velampalayam Main Rd,
                 <br />
                 A.Thirumuruganpoondi, Tiruppur, Tamil Nadu –{" "}

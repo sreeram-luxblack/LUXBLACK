@@ -22,7 +22,9 @@ export default function TiltedCards() {
               silence of sunrise… The warmth of a place that remembers your
               name…
               <br></br>
+              <br></br>
               The stillness of a moment that lives on in memory, not in photos.
+              <br></br>
               <br></br>
               At Lux Black, we don’t just plan travel. We curate stories that
               are felt not told. Stories that begin the moment you dream… and
@@ -48,10 +50,12 @@ export default function TiltedCards() {
               soulful encounters, and experiences that awaken joy, stillness,
               and awe.
               <br></br>
+              <br></br>
               This isn’t luxury that shouts. This is luxury that whispers in a
               handwritten note waiting in your villa, a local elder sharing
               legends under starlight, a hidden café tucked away from the
               crowds.
+              <br></br>
               <br></br>
               We believe true luxury is not measured in stars, but in how deeply
               you feel each moment.
