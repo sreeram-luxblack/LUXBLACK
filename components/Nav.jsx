@@ -22,7 +22,7 @@ export default function Navbar() {
     <header
       className={`fixed top-0 w-full z-50 transition-colors duration-300 ${
         scrolled
-          ? "bg-[#201f1f7f] backdrop-blur-[4px] shadow-lg "
+          ? "bg-[#0000008f] backdrop-blur-[4px] shadow-lg "
           : "bg-transparent"
       }`}
     >
@@ -46,7 +46,7 @@ export default function Navbar() {
         {/* Center Logo */}
         <div className="absolute left-1/2 -translate-x-1/2">
           <Link href="/">
-            <Image src="/images/logo.png" alt="Logo" width={200} height={100} />
+            <Image src="/images/lux2.png" alt="Logo" width={100} height={50} />
           </Link>
         </div>
 
