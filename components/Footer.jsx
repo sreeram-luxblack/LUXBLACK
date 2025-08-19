@@ -37,9 +37,14 @@ export default function Footer() {
 
       {/* ✅ Content Layer (on top of image) */}
       <div className="relative z-10">
+        <div className="flex flex-col items-center  md:pt-6">
+          <img src="/images/footerlogo.png" alt="Footer Logo" className="md:w-40  w-36" >
+          
+          </img>
+        </div>
         {/* Header CTA */}
-        <div className="text-center pt-16 px-6 sm:px-10">
-          <h2 className="text-4xl sm:text-5xl font-playfair tracking-wide text-[#2C2C2C] mb-4">
+        <div className="text-center  px-6 sm:px-10">
+          <h2 className="text-3xl sm:text-5xl font-playfair tracking-wide text-[#2C2C2C] mb-4">
             Begin Your Journey
           </h2>
           <p className="text-[#5A5A5A] text-lg sm:text-xl  [text-shadow:2px_2px_4px_rgba(255,255,255,0.3)] max-w-2xl mx-auto font-libre">
@@ -91,7 +96,7 @@ export default function Footer() {
             <div className="flex justify-between flex-col text-[#3d3d3d] font-libre md:flex-row gap-5 md:gap-8">
               <div className="flex items-center gap-2">
                 <HiOutlinePhone size={20} />
-                <p className="text-[18px] font-semibold ">+91 811 107 1115</p>
+                <p className="text-[18px] font-semibold ">+91 81110 71115</p>
               </div>
 
               {/* Phone 2 */}

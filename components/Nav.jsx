@@ -46,7 +46,7 @@ export default function Navbar() {
         {/* Center Logo */}
         <div className="absolute left-1/2 -translate-x-1/2">
           <Link href="/">
-            <Image src="/images/lux2.png" alt="Logo" width={100} height={50} className="w-[80px] md:w-[100px]" />
+            <Image src="/images/lux2.png" alt="Logo" width={100} height={50} className="w-[100px] md:w-[130px]" />
           </Link>
         </div>
 
