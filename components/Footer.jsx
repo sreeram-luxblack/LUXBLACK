@@ -38,12 +38,12 @@ export default function Footer() {
       {/* ✅ Content Layer (on top of image) */}
       <div className="relative z-10">
         <div className="flex flex-col items-center  md:pt-6">
-          <img src="/images/footerlogo.png" alt="Footer Logo" className="md:w-40  w-36" >
+          <img src="/images/footerlogo.png" alt="Footer Logo" className="md:w-40 my-3  w-36" >
           
           </img>
         </div>
         {/* Header CTA */}
-        <div className="text-center  px-6 sm:px-10">
+        {/* <div className="text-center  px-6 sm:px-10">
           <h2 className="text-3xl sm:text-5xl font-playfair tracking-wide text-[#2C2C2C] mb-4">
             Begin Your Journey
           </h2>
@@ -51,10 +51,10 @@ export default function Footer() {
             Step into a world where luxury meets purpose. Your adventure starts
             here.
           </p>
-        </div>
+        </div> */}
 
         {/* Divider Line */}
-        <div className="h-[2px] w-24 bg-gradient-to-r from-[#C9B87A] to-[#A78B49] mx-auto my-5 md:my-10 rounded-full" />
+        <div className="h-[2px] w-24 bg-gradient-to-r from-[#C9B87A] to-[#A78B49] mx-auto my-3 mb-6 rounded-full" />
 
         {/* Footer Core */}
         <div className="max-w-7xl mx-auto pb-16 px-6 flex flex-col items-center md:space-y-10 space-y-6 ">
