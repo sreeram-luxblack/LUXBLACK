@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const categories = [
   {
@@ -88,10 +89,12 @@ export default function Groups() {
               <div className="absolute border-[#dbc471] border-[1px] inset-0 [backface-visibility:hidden] [transform:rotateY(180deg)] bg-[#ffffff] rounded-lg p-3 shadow-md flex flex-col justify-center items-center space-y-3 overflow-auto">
                 <div className="flex flex-wrap gap-2 justify-center">
                   {cat.countries.map((country, i) => (
+                     <Link href="/destination" >
                     <div
                       key={i}
                       className="w-[48%] sm:w-36 md:w-40 h-20 rounded overflow-hidden shadow-sm bg-white flex flex-col items-center justify-center border border-[#dbc471]"
                     >
+                     
                       <Image
                         src={country.image}
                         alt={country.name}
@@ -99,10 +102,12 @@ export default function Groups() {
                         height={60}
                         className="object-cover w-full h-[70%]"
                       />
+                    
                       <p className="text-xs text-[#2C2C2C] mt-1 font-libre ">
                         {country.name}
                       </p>
                     </div>
+                      </Link>
                   ))}
                 </div>
               </div>
