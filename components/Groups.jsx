@@ -62,7 +62,7 @@ export default function Groups() {
         {categories.map((cat, idx) => (
           <div
             key={idx}
-            className="group border-1 border-[#2c2c2c71] rounded-lg [perspective:1000px] h-[300px] sm:h-[500px] 2xl:h-[550px] w-full sm:w-[240px] md:w-[250px] cursor-pointer"
+            className="group border-1 border-[#2c2c2c71] rounded-lg [perspective:1000px] h-[340px] sm:h-[500px] 2xl:h-[550px] w-full sm:w-[240px] md:w-[250px] cursor-pointer"
             onClick={() => setFlippedIndex(flippedIndex === idx ? null : idx)}
           >
             <div
@@ -89,25 +89,24 @@ export default function Groups() {
               <div className="absolute border-[#dbc471] border-[1px] inset-0 [backface-visibility:hidden] [transform:rotateY(180deg)] bg-[#ffffff] rounded-lg p-3 shadow-md flex flex-col justify-center items-center space-y-3 overflow-auto">
                 <div className="flex flex-wrap gap-2 justify-center">
                   {cat.countries.map((country, i) => (
-                     <Link href="/destination" >
-                    <div
-                      key={i}
-                      className="w-[48%] sm:w-36 md:w-40 h-20 rounded overflow-hidden shadow-sm bg-white flex flex-col items-center justify-center border border-[#dbc471]"
-                    >
-                     
-                      <Image
-                        src={country.image}
-                        alt={country.name}
-                        width={160}
-                        height={60}
-                        className="object-cover w-full h-[70%]"
-                      />
-                    
-                      <p className="text-xs text-[#2C2C2C] mt-1 font-libre ">
-                        {country.name}
-                      </p>
-                    </div>
-                      </Link>
+                    <Link href="/destination">
+                      <div
+                        key={i}
+                        className="w-full sm:w-40 md:w-44 h-36 rounded-lg overflow-hidden shadow-sm bg-white flex flex-col items-center justify-center border border-[#dbc471] mx-1"
+                      >
+                        <Image
+                          src={country.image}
+                          alt={country.name}
+                          width={160}
+                          height={60}
+                          className="object-cover w-28 h-28"
+                        />
+
+                        <p className="text-xs text-[#2C2C2C] mt-1 font-libre text-center">
+                          {country.name}
+                        </p>
+                      </div>
+                    </Link>
                   ))}
                 </div>
               </div>
